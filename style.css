@@ -210,6 +210,14 @@ header{
   position: center;
   padding: 20px 0px;
 }
+@-webkit-keyframes flash {
+  0% { opacity: .3; }
+  100% { opacity: 1; }
+ }
+ @keyframes flash {
+  0% { opacity: .3; }
+  100% { opacity: 1; }
+ }
 .img-icon{
   width: 30px;
   height: 30px;
@@ -231,6 +239,9 @@ header nav ul li a{
   color: #111;
   text-transform: uppercase;
   letter-spacing: 0px;
+}
+a:hover{
+  font-weight: 900;
 }
 
 @media only screen and (min-width:1000px){ 
@@ -1338,6 +1349,14 @@ footer {
     line-height:50px;
     padding: 0;
   }
+
+  .footer-end{
+    visibility:hidden;
+  }
+  .footer-bot{
+    overflow:hidden;
+    visibility:hidden;
+  }
   .footer-bot .img-sc{
     padding: 0px 0px 0px 0px;
   }
@@ -1348,6 +1367,11 @@ footer {
   .footer-bot .img-email{
     
     padding: 0px 0px 0px 0px;
+  }
+  .img-sc:hover, .img-email:hover, .img-gh:hover{
+    opacity: 1;
+    -webkit-animation: flash 1s;
+    animation: flash 1s;
   }
   .footer-bot{
     width:50px;

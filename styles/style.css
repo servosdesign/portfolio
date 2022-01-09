@@ -100,92 +100,20 @@ hr {
 input, select {
     vertical-align:middle;
 }
+
 @font-face{
-  src: url(fonts/SourceHanSerifSC-Light.otf);
-  font-family: SourceHanSerifSC-Light;
-}
-@font-face{
-  src: url(fonts/333.ttf);
-  font-family: 333;
-}
-@font-face{
-  src: url(fonts/ZhangHaiShan-RuiXianTi.ttf);
-  font-family: ZhangHaiShanRuiXianTi;
-}
-@font-face{
-  src: url(fonts/wt001.ttf);
-  font-family: wt001;
-}
-@font-face{
-  src: url(fonts/SourceHanSerifSC-SemiBold.otf);
-  font-family: SourceHanSerifSCSemiBold;
-}
-@font-face{
-  src: url(fonts/SourceHanSerifSC-Regular.otf);
-  font-family: SourceHanSerifSCRegular;
-}
-@font-face{
-  src: url(fonts/SourceHanSerifSC-Medium.otf);
-  font-family: SourceHanSerifSCMedium;
-}
-@font-face{
-  src: url(fonts/SourceHanSerifSC-ExtraLight.otf);
+  src: url(../fonts/SourceHanSerifSC-ExtraLight.otf);
   font-family: SourceHanSerifSCExtraLight;
 }
+
 @font-face{
-  src: url(fonts/SourceHanSerifSC-Bold.otf);
-  font-family: SourceHanSerifSCBold;
-}
-@font-face{
-  src: url(fonts/mini-jianzhiyi.ttf);
-  font-family: minijianzhiyi;
-}
-@font-face{
-  src: url(fonts/ABOVE.ttf);
-  font-family: Abovee;
-}
-@font-face{
-  src: url(fonts/Noto-Sans-S-Chinese-Regular.otf);
-  font-family: Noto;
-}
-@font-face{
-  src: url(fonts/wan.ttf);
+  src: url(../fonts/wan.ttf);
   font-family: Wan;
 }
 @font-face{
-  src: url(fonts/wt009.ttf);
-  font-family: wt009;
-}
-@font-face{
-  src: url(fonts/wt011.ttf);
-  font-family: wt011;
-}
-@font-face{
-  src: url(fonts/Compagnon-Light.otf);
-  font-family: Compagnon-Light;
-}
-@font-face{
-  src: url(fonts/Compagnon-Bold.otf);
-  font-family: Compagnon-Bold;
-}
-@font-face{
-  src: url(fonts/Compagnon-Medium.otf);
+  src: url(../fonts/Compagnon-Medium.otf);
   font-family: Compagnon-Medium;
 }
-@font-face{
-  src: url(fonts/Compagnon-Roman.otf);
-  font-family: Compagnon-Roman;
-}
-@font-face{
-  src: url(fonts/Compagnon-LightItalic.otf);
-  font-family: Compagnon-LightItalic;
-}
-
-/* IDEAS: 
-          - hover over bottom footer image to open out the footer links
-          - make a lookbook when have more designs / pictures
-          - when clicking lookbook, open a pdf of the lookbook
-/*
 
 /* header bar */
 *{
@@ -1348,11 +1276,12 @@ footer {
 .clicker-image2{
   width: 100%;
   height: 90px;
-  background-image: url('img/logo2.png');
+  background-image: url('../img/logo2.png');
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100px 100px;
   display: table;
+  cursor: pointer;
 }
 .clicker-image2:hover{
   transition: .3s ease;

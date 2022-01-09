@@ -1,6 +1,4 @@
-<<<<<<< HEAD
-img/
-=======
-img/
->>>>>>> f3e9cf92a389b46482ac641302aeac3d66230040
-fonts/
+/img
+/fonts
+
+/node_modules

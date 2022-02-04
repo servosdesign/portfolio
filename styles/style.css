@@ -114,6 +114,10 @@ input, select {
   src: url(../fonts/Compagnon-Medium.otf);
   font-family: Compagnon-Medium;
 }
+@font-face{
+  src: url(../fonts/Play-Regular.ttf);
+  font-family: Play-Regular
+}
 
 /* header bar */
 *{
@@ -357,6 +361,7 @@ a:hover{
   }
 .contact-page{
   background-color:#f3f3f3;
+  padding-bottom: 24px;
 }
 .container-form{
   visibility:visible;
@@ -372,7 +377,7 @@ a:hover{
   line-height: 10px;
   font-size: 9px;
   text-transform: uppercase;
-  padding: 30px 0px 0px 0px;
+  padding: 30px 0px 100px 0px;
   margin:0;
   }
 .contact-page h3{
@@ -420,11 +425,22 @@ a:hover{
 }
 
 /** projects page mobile **/
-
+.wrapper-group1{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:center;
+  padding: 30px 0px 30px 0px;
+}
 .projectbanner-img{
   height:100%;
   width:100%;
   padding: 0px 0px 0px 0px;
+}
+.second {
+  order:1;
+}
+.first {
+  order: 2;
 }
 .project-pages h2{
   text-align: center;
@@ -436,11 +452,11 @@ a:hover{
   padding:100px 0px 10px 0px;
 }
 .project-pages p{
-  font-family: Wan;
+  font-family: Play-Regular;
   letter-spacing: 0px;
   color: black;
-  line-height: 10px;
-  font-size: 8px;
+  line-height: 15px;
+  font-size: 10px;
   text-transform: none;
   padding: 0px 0px 0px 0px;
   margin:10px;
@@ -470,6 +486,12 @@ a:hover{
   .wrapper-pro{
     width: 1125px;
     margin: 0 auto;
+  }
+  .second {
+    order:2;
+  }
+  .first {
+    order: 1;
   }
   .project-links{
     display:flex;
@@ -513,6 +535,7 @@ a:hover{
   }
   .project-pages h2{
     font-family: Wan;
+    text-align: left;
     height: 30%;
     letter-spacing: 4px;
     color: black;
@@ -540,10 +563,10 @@ a:hover{
   .project-pages p{
     margin:0;
     text-align: left;
-    font-family: wan;
+    font-family: Play-Regular;
     letter-spacing: 0px;
     color: black;
-    line-height: 15px;
+    line-height: 20px;
     font-size: 10px;
     text-transform: none;
     padding: 15px 0px 7px 0px;
@@ -564,6 +587,7 @@ a:hover{
   }
   .wrapper-group1{
     display: flex;
+    flex-wrap: wrap;
     justify-content:center;
     padding: 30px 0px 30px 0px;
   }
@@ -704,11 +728,11 @@ a:hover{
   padding:0px 0px 10px 0px;
 }
 .wrapper-music p{
-  font-family: Wan;
+  font-family: Play-Regular;
   letter-spacing: 0px;
   color: black;
-  line-height: 10px;
-  font-size: 8px;
+  line-height: 12px;
+  font-size: 10px;
   text-transform: none;
   padding: 0px 0px 0px 0px;
   margin:10px;
@@ -733,8 +757,12 @@ a:hover{
     height:350px;
     width:350px;
   }
+  .music-img:hover{
+    box-shadow:  0px 2px 4px -3px #000000;
+    transition: .5s ease;
+  }
   .wrapper-music h2{
-    text-align: center;
+    text-align: left;
     text-transform: uppercase;
     font-family: Compagnon-medium;
     font-size: 10px;
@@ -743,13 +771,13 @@ a:hover{
     padding:0px 0px 8px 0px;
   }
   .wrapper-music p{
-    font-family: Wan;
+    font-family: Play-Regular;
     letter-spacing: 0px;
     color: black;
-    line-height: 15px;
+    line-height: 20px;
     font-size: 11px;
     text-transform: none;
-    padding: 0px 0px 180px 0px;
+    padding: 0px 0px 142px 0px;
     margin:0;
     width:350px;
     text-align: left;
@@ -786,13 +814,13 @@ a:hover{
   padding:50px 0px 10px 0px;
 }
 .wrapper-design p{
-  font-family: Wan;
+  font-family: Play-Regular;
   letter-spacing: 0px;
   color: black;
-  line-height: 10px;
-  font-size: 8px;
+  line-height: 12px;
+  font-size: 10px;
   text-transform: none;
-  padding: 0px 0px 60px 0px;
+  padding: 0px 0px 70px 0px;
   margin:10px;
   text-align: center;
 }
@@ -816,7 +844,7 @@ a:hover{
     width:500px;
   }
   .wrapper-design h2{
-    text-align: center;
+    text-align: left;
     text-transform: uppercase;
     font-family: Compagnon-medium;
     font-size: 10px;
@@ -825,16 +853,16 @@ a:hover{
     padding:0px 0px 8px 0px;
   }
   .wrapper-design p{
-    font-family: Wan;
+    font-family: Play-Regular;
     letter-spacing: 0px;
     color: black;
-    line-height: 15px;
+    line-height: 18px;
     font-size: 11px;
+    margin: 0;
     text-transform: none;
-    padding: 0px 0px 45px 0px;
-    margin:0 auto;
-    width:350px;
-    text-align: center;
+    padding: 0px 0px 62px 0px;
+    width:480px;
+    text-align: left;
   }
   .second-design{
     padding: 0;
@@ -860,6 +888,7 @@ a:hover{
 .first-item{
   order:2;
   width:100%;
+  padding-top: 100px;
 }
 .first-item h2{
   width:100%;
@@ -890,11 +919,11 @@ a:hover{
 .first-item p{
   text-align: center;
   width:100%;
-  font-family: Wan;
+  font-family: Play-Regular;
   letter-spacing: 0px;
   color: black;
   line-height: 15px;
-  font-size: 8px;
+  font-size: 10px;
   text-transform: none;
   padding: 10px 0px 0px 0px;
 }
@@ -911,6 +940,7 @@ a:hover{
 .second-item{
   order:4;
   width:100%;
+  padding-top: 100px;
 }
 .second-item h2{
   width:100%;
@@ -941,11 +971,11 @@ a:hover{
 .second-item p{
   text-align: center;
   width:100%;
-  font-family: Wan;
+  font-family: Play-Regular;
   letter-spacing: 0px;
   color: black;
   line-height: 15px;
-  font-size: 8px;
+  font-size: 10px;
   text-transform: none;
   padding: 10px 0px 0px 0px;
 }
@@ -961,6 +991,7 @@ a:hover{
 .third-item{
   order:6;
   width:100%;
+  padding-top: 100px;
 }
 .third-item h2{
   width:100%;
@@ -986,16 +1017,16 @@ a:hover{
   font-size: 5px;
   text-transform: uppercase;
   text-transform: bold;
-  padding: 10px 0px 180px 0px;
+  padding: 10px 0px 80px 0px;
 }
 .third-item p{
   text-align: center;
   width:100%;
-  font-family: Wan;
+  font-family: Play-Regular;
   letter-spacing: 0px;
   color: black;
   line-height: 15px;
-  font-size: 8px;
+  font-size: 10px;
   text-transform: none;
   padding: 10px 0px 0px 0px;
 }
@@ -1030,6 +1061,7 @@ a:hover{
   .first-item{
     order:0;
     width:562px;
+    padding-top: 0;
   }
   .first-item h2{
     text-align: left;
@@ -1062,11 +1094,11 @@ a:hover{
   .first-item p{
     text-align: left;
     order:0;
-    width:65%;
-    font-family: Wan;
+    width:80%;
+    font-family: Play-Regular;
     letter-spacing: 0px;
     color: black;
-    line-height: 15px;
+    line-height: 20px;
     font-size: 10px;
     text-transform: none;
     padding: 15px 0px 0px 0px;
@@ -1084,6 +1116,7 @@ a:hover{
   .second-item{
     order:0;
     width:562px;
+    padding-top: 0;
   }
   .second-item h2{
     text-align: left;
@@ -1096,7 +1129,7 @@ a:hover{
     line-height: 10px;
     font-size: 9px;
     text-transform: uppercase;
-    padding: 200px 0px 0px 200px;
+    padding: 200px 0px 0px 50px;
     margin: 0;
   }
   .second-item h3{
@@ -1111,19 +1144,19 @@ a:hover{
     font-size: 5px;
     text-transform: uppercase;
     text-transform: bold;
-    padding: 10px 0px 0px 200px;
+    padding: 10px 0px 0px 50px;
   }
   .second-item p{
     text-align: left;
     order:0;
-    width:65%;
-    font-family: Wan;
+    width:80%;
+    font-family: Play-Regular;
     letter-spacing: 0px;
     color: black;
-    line-height: 15px;
+    line-height: 20px;
     font-size: 10px;
     text-transform: none;
-    padding: 15px 0px 0px 200px;
+    padding: 15px 0px 0px 50px;
   }
   .second-img{
     order:0;
@@ -1138,6 +1171,7 @@ a:hover{
   .third-item{
     order:0;
     width:562px;
+    padding-top: 0;
   }
   .third-item h2{
     text-align: left;
@@ -1170,11 +1204,11 @@ a:hover{
   .third-item p{
     text-align: left;
     order:0;
-    width:65%;
-    font-family: Wan;
+    width:80%;
+    font-family: Play-Regular;
     letter-spacing: 0px;
     color: black;
-    line-height: 15px;
+    line-height: 20px;
     font-size: 10px;
     text-transform: none;
     padding: 15px 0px 0px 0px;
@@ -1221,6 +1255,7 @@ footer {
   width: 100%;
   overflow: hidden;
   position:absolute;
+  padding-bottom: 20px;
 }
 
 .footer-end{
@@ -1335,11 +1370,16 @@ footer {
 /* footer web */
 
 @media only screen and (min-width:1000px){
+  #footer {
+    bottom: 0;
+    width: 100%;         
+  }
+  
   #wrapper-sm{
     display: flex;
     justify-content:center;
     background-color: rgb(255, 255, 255);
-    padding-bottom: 50px;
+    padding-bottom: 0px;
   }
   .footer-mid{
     position: absolute;
@@ -1410,7 +1450,6 @@ footer {
 } 
 
 /* contact form */
-
 
   .wrapper-pro3{
     padding: 0;

@@ -577,10 +577,16 @@ a:hover{
     height:20px;
     padding: 0px 35px 0px 0px;
   }
-  .first .button_cont{
+  .button_cont{
     position:left;
     display:inline-block;
-    padding: 10px 0px 0px 0px;
+    padding-top: 12px;
+    }
+  .button_cont2{
+    position:left;
+    display:inline-block;
+    padding-top: 12px;
+    padding-left: 50px;
     }
   .second{
     display:inline-block;

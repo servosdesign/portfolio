@@ -425,157 +425,46 @@ a:hover{
 }
 
 /** projects page mobile **/
-.wrapper-group1{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content:center;
-  padding: 30px 0px 30px 0px;
+
+.commission-wrapper2{
+  display:flex;
+  flex-flow: column;
+  justify-items: center;
+  justify-content: space-evenly;
+  margin: 0 auto;
+  padding-bottom: 0px;
 }
-.projectbanner-img{
-  height:100%;
-  width:100%;
-  padding: 0px 0px 0px 0px;
-}
-.second {
-  order:1;
-}
-.first {
-  order: 2;
-}
-.project-pages h2{
-  text-align: center;
-  text-transform: uppercase;
-  font-family: Compagnon-medium;
-  font-size: 10px;
-  letter-spacing: 10px;
-  color: rgb(0, 0, 0);;
-  padding:100px 0px 10px 0px;
-}
-.project-pages p{
-  font-family: Play-Regular;
-  letter-spacing: 0px;
-  color: black;
-  line-height: 15px;
-  font-size: 10px;
-  text-transform: none;
-  padding: 0px 0px 0px 0px;
-  margin:10px;
-  text-align: center;
-}
-.project-pages h3{
-  text-align: center;
-  font-family: Wan;
-  height: 30%;
-  letter-spacing: 4px;
-  color: black;
-  line-height: 10px;
-  font-size: 5px;
-  text-transform: uppercase;
-  text-transform: bold;
-  padding: 0px 0px 0px 0px;
-}
-.spacer{
-  padding:0px 0px 120px 0px;
-}
+  .commission-wrapper3{
+    display:flex;
+    flex-flow: column;
+    justify-items: center;
+    justify-content: space-evenly;
+    margin: 0 auto;
+    padding-bottom: 0px;
+  }
+
+
 
 /** projects web **/
 
 @media only screen and (min-width:1000px){
   body#page2{background-color:rgb(255, 255, 255);}
 
-  .wrapper-pro{
-    width: 1125px;
-    margin: 0 auto;
-  }
-  .second {
-    order:2;
-  }
-  .first {
-    order: 1;
-  }
-  .project-links{
+  .commission-wrapper2{
     display:flex;
     flex-flow: row wrap;
     justify-items: center;
+    justify-content: space-between;
     width: 1125px;
     margin: 0 auto;
   }
-  .project-img-link{
-  display:flex;
-  font-family: Wan;
-  letter-spacing: 152px;
-  color: black;
-  float:  center;
-  text-align: left;
-  line-height: 10px;
-  font-size: 9px;
-  margin: 0;
-  padding: 20px 4px 20px;
-  text-transform: uppercase;
-  }
-  .project-link{
-    width:368px;
-    height:200px;
-    margin:3px;
-    background-color: #e3e3e3;
-  }
-  .project-img{
-    background-color:#e3e3e3;
-    width:368px;
-    height:200px;
-  }
-  .projectbanner-img{
-    width:368px;
-    height:200px;
-    padding: 0px 0px 0px 0px;
-  }
-  .projectbanner-img:hover{
-  box-shadow:  0px 3px 8px -3px #000000;
-  transition: .5s ease;
-  }
-  .project-pages h2{
-    font-family: Wan;
-    text-align: left;
-    height: 30%;
-    letter-spacing: 4px;
-    color: black;
-    line-height: 10px;
-    font-size: 9px;
-    text-transform: uppercase;
-    padding: 20px 0px 0px 0px;
-  }
-  .project-pages h3{
-    text-align: left;
-    font-family: Wan;
-    height: 5px;
-    letter-spacing: 4px;
-    color: black;
-    line-height: 5px;
-    font-size: 5px;
-    text-transform: uppercase;
-    text-transform: bold;
-    padding: 0px 0px 0px 0px;
-  }
-  div{
-    margin:0;
-    padding:0;
-  } 
-  .project-pages p{
-    margin:0;
-    text-align: left;
-    font-family: Play-Regular;
-    letter-spacing: 0px;
-    color: black;
-    line-height: 20px;
-    font-size: 10px;
-    text-transform: none;
-    padding: 15px 0px 7px 0px;
-  }
-  .first{
-    display:inline-block;
-    width:20%;
-    height:20px;
-    padding: 0px 35px 0px 0px;
+  .commission-wrapper3{
+    display:flex;
+    flex-flow: row wrap;
+    justify-items: center;
+    justify-content: space-between;
+    width: 1125px;
+    margin: 0 auto;
   }
   .button_cont{
     position:left;
@@ -588,20 +477,6 @@ a:hover{
     padding-top: 12px;
     padding-left: 50px;
     }
-  .second{
-    display:inline-block;
-  }
-  .wrapper-group1{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content:center;
-    padding: 30px 0px 30px 0px;
-  }
-  .wrapper-group2{
-    display: flex;
-    justify-content:center;
-    padding: 30px 0px 30px 0px;
-  }
   .example_c {
     font-family: Wan;
     letter-spacing: 1px;

@@ -440,7 +440,7 @@ a:hover{
     justify-items: center;
     justify-content: space-evenly;
     margin: 0 auto;
-    padding-bottom: 0px;
+    padding-bottom: 100px;
   }
 
 
@@ -465,6 +465,7 @@ a:hover{
     justify-content: space-between;
     width: 1125px;
     margin: 0 auto;
+    padding-bottom: ;
   }
   .button_cont{
     position:left;

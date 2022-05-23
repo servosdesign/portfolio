@@ -7,7 +7,8 @@
 
   $mailTo = "maxim@servosdesign.com";
   $headers = "From: ".$email;
-  $txt = "You have recieved an email from ".$name.".\n\n".$msg;
+  $subject = "Portfolio Contact Form";
+  $txt = "Name: ".$name."\n\n".$msg;
 
    mail($mailTo, $subject, $txt, $headers);
    header("Location: contact.html?mailsend");

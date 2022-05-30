@@ -465,7 +465,6 @@ a:hover{
     justify-content: space-between;
     width: 1125px;
     margin: 0 auto;
-    padding-bottom: ;
   }
   .button_cont{
     position:left;
@@ -1110,24 +1109,9 @@ a:hover{
 /* lookbook (coming soon) */
 .lookbook-wrapper{
   display:flex;
+  justify-content: center;
   flex-flow: row wrap;
-  justify-content: space-between;
-  width: 1125px;
   margin: 0 auto;
-}
-.lookbook-wrapper h2{
-  text-align: center;
-  order:0;
-  width:100%;
-  font-family: Wan;
-  height: 10px;
-  letter-spacing: 4px;
-  color: black;
-  line-height: 10px;
-  font-size: 9px;
-  text-transform: uppercase;
-  padding: 250px 0px 412px 0px;
-  margin: 0;
 }
 
 /* footer mobile */

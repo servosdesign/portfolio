@@ -205,6 +205,7 @@ a:hover{
 /* front-design */
 
 .index-design{
+  position:relative;
   display: grid;
   height: 100%;
 }
@@ -212,6 +213,8 @@ a:hover{
   display: grid;
   height: 100%;
   width: 100px;
+ text-transform: none;
+ text-decoration: none;
 }
 .image-design{
   max-height: 100vh;
@@ -226,9 +229,20 @@ a:hover{
   transition: .5s ease;
   }
 
+  .first-music{
+    transition: .5s ease;
+    
+  }
+
+  .first-music:hover{
+    box-shadow:  0px 3px 4px -3px #000000;
+    transition: .5s ease;
+  }
+
 /* front-music */
 
 .index-music{
+  position:relative;
   display: grid;
   height: 100%;
 }
@@ -253,11 +267,19 @@ a:hover{
   box-shadow:  0px 3px 4px -3px #000000;
   transition: .5s ease;
   }
+  .second-music{
+    transition: .5s ease;
+  }
+  .second-music:hover{
+    box-shadow:  0px 3px 4px -3px #000000;
+    transition: .5s ease;
+  }
 
 
 /* front-coding */
 
 .index-coding{
+  position:relative;
   display: grid;
   height: 100%;
 }
@@ -276,7 +298,8 @@ a:hover{
 }
 
 .image-coding{
-  transition: .5s ease;
+  transition: .5s e
+  ase;
   }
   
 .image-coding:hover{
@@ -290,6 +313,41 @@ a:hover{
     justify-content:center;
     background-color: white;
   }
+  #wrapper h2{
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 300;
+    bottom: 0px;
+    top: 380px;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: Compagnon-medium;
+    font-size: 10px;
+    letter-spacing: 15px;
+    color: rgb(0, 0, 0);;
+    padding:0px 0px 10px 0px;
+  }
+  #wrapper p{
+    pointer-events:all;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    top: 410px;
+    right: 300;
+    bottom: 0px;
+    width: 340px;
+    font-family: Play-Regular;
+    letter-spacing: 0px;
+    color: black;
+    font-weight: 0;
+    text-transform:none;
+    line-height: 20px;
+    font-size: 12px;
+    text-align: left;
+  }
+
 }
 
 /** contact mobile **/
@@ -588,11 +646,9 @@ a:hover{
 /** music mobile **/
 
 .wrapper-music{
-  display:flex;
-  flex-flow: column;
-  justify-items: center;
-  justify-content: space-evenly;
-  margin: 0 auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
 }
 .wrapper-music .music-img{
   height:100%;
@@ -637,10 +693,6 @@ a:hover{
   .wrapper-music .music-img{
     height:350px;
     width:350px;
-  }
-  .music-img:hover{
-    box-shadow:  0px 2px 4px -3px #000000;
-    transition: .5s ease;
   }
   .wrapper-music h2{
     text-align: left;

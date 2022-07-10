@@ -218,19 +218,8 @@ a:hover{
 }
 .image-design{
   max-height: 100vh;
-  margin-left: 35px;
-  margin-right: auto;
-  display: block;
+  margin:auto;
 }
-
-@media only screen and (min-width:1000px){
-  .image-design{
-  margin-left: 0;
-  margin-right: 0;
-  display: block;
-  }
-}
-
 .image-design{
   transition: .5s ease;
   }
@@ -268,16 +257,7 @@ a:hover{
 }
 .image-music{
   max-height: 100vh;
-  margin-left: 35px;
-  margin-right: auto;
-  display: block;
-}
-@media only screen and (min-width:1000px){
-  .image-music{
-  margin-left: 0;
-  margin-right: 0;
-  display: block;
-  }
+  margin:auto;
 }
 .image-music{
   transition: .5s ease;
@@ -314,16 +294,7 @@ a:hover{
 }
 .image-coding{
   max-height: 100vh;
-  margin-left: 35px;
-  margin-right: auto;
-  display: block;
-}
-@media only screen and (min-width:1000px){
-  .image-coding{
-  margin-left: 0;
-  margin-right: 0;
-  display: block;
-  }
+  margin:auto;
 }
 
 .image-coding{
@@ -335,28 +306,6 @@ a:hover{
   box-shadow:  0px 3px 4px -3px #000000;
   transition: .5s ease;
   }
-
-#wrapper h2{
-  text-align: center;
-    text-transform: uppercase;
-    font-family: Compagnon-medium;
-    font-size: 10px;
-    letter-spacing: 15px;
-    color: rgb(0, 0, 0);;
-    padding:0px 0px 10px 0px;
-}
-#wrapper p{
- margin: 10px;
-  font-family: Play-Regular;
-  letter-spacing: 0px;
-  color: black;
-  font-weight: 0;
-  text-transform:none;
-  line-height: 20px;
-  font-size: 12px;
-  vertical-align: middle;
-  text-align: center;
-}
 
 @media only screen and (min-width:1000px){
   #wrapper{
@@ -385,7 +334,6 @@ a:hover{
     position: absolute;
     margin-left: auto;
     margin-right: auto;
-    margin: 0;
     top: 410px;
     right: 300;
     bottom: 0px;
@@ -399,6 +347,7 @@ a:hover{
     font-size: 12px;
     text-align: left;
   }
+
 }
 
 /** contact mobile **/
@@ -902,7 +851,7 @@ a:hover{
 }
 .first-item p{
   text-align: center;
-  margin: 10px;
+  margin: 9px;
   font-family: Play-Regular;
   letter-spacing: 0px;
   color: black;
@@ -954,7 +903,7 @@ a:hover{
 }
 .second-item p{
   text-align: center;
-  margin: 8px;
+  margin: 9px;
   font-family: Play-Regular;
   letter-spacing: 0px;
   color: black;
@@ -1005,7 +954,7 @@ a:hover{
 }
 .third-item p{
   text-align: center;
-  margin: 8px;
+  margin: 9px;
   font-family: Play-Regular;
   letter-spacing: 0px;
   color: black;
@@ -1077,8 +1026,8 @@ a:hover{
   }
   .first-item p{
     text-align: left;
-    order:0;
     margin: 0;
+    order:0;
     width:80%;
     font-family: Play-Regular;
     letter-spacing: 0px;
@@ -1133,8 +1082,8 @@ a:hover{
   }
   .second-item p{
     text-align: left;
-    order:0;
     margin: 0;
+    order:0;
     width:80%;
     font-family: Play-Regular;
     letter-spacing: 0px;
@@ -1189,8 +1138,8 @@ a:hover{
   }
   .third-item p{
     text-align: left;
-    order:0;
     margin: 0;
+    order:0;
     width:80%;
     font-family: Play-Regular;
     letter-spacing: 0px;

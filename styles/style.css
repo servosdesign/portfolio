@@ -1449,12 +1449,24 @@ a:hover {
 }
 
 /* lookbook (coming soon) */
-.lookbook-wrapper {
+@media only screen and (min-width:1000px) {
+  .lookbook-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    margin: 0 auto;
+  }
+}
+.lookbook-wrapper img{
+  max-width: 100%;
+  height: auto;
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
   margin: 0 auto;
 }
+
+
 
 /* footer mobile */
 

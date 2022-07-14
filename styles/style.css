@@ -216,7 +216,7 @@ a:hover {
 .image-design {
   max-height: 100vh;
   margin: auto;
-  padding-left: 12px;
+  padding-left: 20px;
 }
 
 @media only screen and (min-width:1000px) {
@@ -255,7 +255,7 @@ a:hover {
 .image-music {
   max-height: 100vh;
   margin: auto;
-  padding-left: 12px;
+  padding-left: 20px;
 }
 
 @media only screen and (min-width:1000px) {
@@ -294,7 +294,7 @@ a:hover {
 .image-coding {
   max-height: 100vh;
   margin: auto;
-  padding-left: 12px;
+  padding-left: 20px;
 }
 
 @media only screen and (min-width:1000px) {

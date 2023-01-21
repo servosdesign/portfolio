@@ -1,1 +1,1 @@
-#### All custom code used for creation of [servosdesign.com](http://www.servosdesign.com/), my portfolio website.
+#### Remake of my original portfolio website, previously made with HTML, CSS, JavaScript, PHP, now made in Vue.js & featuring more dynamic page rendering 

@@ -1,21 +1,49 @@
 <template>
   <div>
-    <ProjectsContent />
-    <DesignsContent />
+    <div v-if="isFirstPage">
+      <ProjectsContent />
+    </div>
+
+    <div v-if="isSecondPage">
+      <DesignsContent />
+    </div>
+
+    <div v-if="isThirdPage">
+      <LookbookContent />
+    </div>
   </div>
 </template>
 
 <script>
 import ProjectsContent from './ProjectsContent.vue'
 import DesignsContent from './DesignsContent.vue'
+import LookbookContent from './LookbookContent.vue'
 
 export default {
   components: {
     ProjectsContent,
-    DesignsContent
+    DesignsContent,
+    LookbookContent
+  },
+  props: {
+    pageNumber: {
+      type: Number,
+      default: 0
+    }
   },
   data () {
     return {}
+  },
+  computed: {
+    isFirstPage () {
+      return this.pageNumber === 0
+    },
+    isSecondPage () {
+      return this.pageNumber === 1
+    },
+    isThirdPage () {
+      return this.pageNumber === 2
+    }
   }
 }
 </script>

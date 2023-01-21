@@ -1,10 +1,199 @@
 <template>
   <div>
-    <button class="left">
-      Left
-    </button>
-    <button class="right">
-      Right
-    </button>
+    <div
+      v-for="(index) in numberOfProjects"
+      :key="index"
+    >
+      <div
+        v-for="project in projects"
+        :key="project.length"
+      >
+        <!--LEFT-->
+        <div
+          v-if="project.leftAligned [index] !== undefined"
+          class="list-wrapper"
+        >
+          <div class="repo-img">
+            <a
+              :href="project.leftAligned[index].link"
+              target="_blank"
+              rel="noopener noreferrer"
+            ><img
+              class="design2"
+              :src="project.leftAligned[index].imageSrc"
+              alt=""
+            ></a>
+          </div>
+
+          <div class="list-description">
+            <h2>{{ project.leftAligned[index].title }}</h2>
+            <p>
+              {{ project.leftAligned[index].description }}
+            </p>
+            <h3>{{ project.leftAligned[index].tag }}</h3>
+            <div class="repo-button">
+              <a
+                class="example_c"
+                :href="project.leftAligned[index].link"
+                target="_blank"
+                rel="nofollow noopener"
+              > <h4>Visit</h4></a>
+            </div>
+          </div>
+        </div>
+        <!--RIGHT-->
+        <div
+          v-if="project.rightAligned[index] !== undefined"
+          class="list-wrapper"
+        >
+          <div class="list-description">
+            <h2>{{ project.rightAligned[index].title }}</h2>
+            <p>
+              {{ project.rightAligned[index].description }}
+            </p>
+            <h3>{{ project.rightAligned[index].tag }}</h3>
+            <div class="repo-button">
+              <a
+                class="example_c"
+                :href="project.rightAligned[index].link"
+                target="_blank"
+                rel="nofollow noopener"
+              > <h4>Visit</h4></a>
+            </div>
+          </div>
+          <div class="repo-img">
+            <a
+              :href="project.rightAligned[index].link"
+              target="_blank"
+              rel="noopener noreferrer"
+            ><img
+              class="design2"
+              :src="project.rightAligned[index].imageSrc"
+              alt=""
+            ></a>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
+
+<script>
+import designContent from '../assets/data/designs-config.js'
+
+export default {
+  data () {
+    return {
+      projects: designContent,
+      numberOfProjects: [0, 1, 2]
+    }
+  }
+}
+</script>
+
+<style>
+.list-wrapper {
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.repo-img{
+  box-shadow: 0px 3px 4px -3px #000000;
+  width: 562px;
+}
+
+.repo-img img{
+  height: 100%;
+  width: 100%;
+  padding: 0px 0px 0px 0px;
+}
+
+.repo-img:hover{
+  box-shadow: 0px 3px 8px -3px #000000;
+  transition: .5s ease;
+}
+
+.list-description{
+  width: 562px;
+  height: 562px;
+  padding-top: 0;
+}
+
+.list-description h2 {
+  text-align: left;
+  width: 50%;
+  font-family: Wan;
+  height: 10px;
+  letter-spacing: 4px;
+  color: black;
+  line-height: 10px;
+  font-size: 9px;
+  text-transform: uppercase;
+  padding: 200px 0px 0px 50px;
+  margin: 0;
+}
+
+.list-description h3 {
+  text-align: left;
+  order: 0;
+  width: 100%;
+  font-family: Wan;
+  height: 10px;
+  letter-spacing: 4px;
+  color: black;
+  line-height: 10px;
+  font-size: 5px;
+  text-transform: uppercase;
+  text-transform: bold;
+  padding: 10px 0px 0px 50px;
+}
+
+.list-description p {
+  text-align: left;
+  margin: 0;
+  width: 80%;
+  font-family: Play-Regular;
+  letter-spacing: 0px;
+  color: black;
+  line-height: 20px;
+  font-size: 10px;
+  text-transform: none;
+  padding: 15px 0px 0px 50px;
+}
+
+.repo-button{
+  position: left;
+  display: inline-block;
+  padding-top: 12px;
+  padding-left: 50px;
+}
+
+h4 {
+  margin: 0;
+}
+
+.example_c {
+    font-family: Wan;
+    letter-spacing: 1px;
+    color: black;
+    line-height: 7px;
+    font-size: 9px;
+    height: 7px;
+    text-transform: none;
+    text-decoration: none;
+    background: #ffffff;
+    padding: 4px;
+    border: 1px solid #000000 !important;
+    display: inline-block;
+    transition: all 0.4s ease 0s;
+  }
+
+  .example_c:hover {
+    color: #ffffff !important;
+    background: #d64343;
+    border-color: #d64343 !important;
+    transition: all 0.4s ease 0s;
+  }
+</style>

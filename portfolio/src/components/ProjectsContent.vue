@@ -87,11 +87,19 @@ export default {
       projects: projectContent,
       numberOfProjects: [0, 1, 2]
     }
+  },
+  mounted () {
+    this.scrollToTop()
+  },
+  methods: {
+    scrollToTop () {
+      window.scrollTo({ top: 0, left: 0, behavior: 'instant' })
+    }
   }
 }
 </script>
 
-<style>
+<style scoped>
 .list-wrapper {
   display: flex;
   margin: 0 auto;
@@ -100,7 +108,6 @@ export default {
 }
 
 .repo-img{
-  box-shadow: 0px 3px 4px -3px #000000;
   width: 562px;
 }
 
@@ -111,7 +118,6 @@ export default {
 }
 
 .repo-img:hover{
-  box-shadow: 0px 3px 8px -3px #000000;
   transition: .5s ease;
 }
 
@@ -192,8 +198,8 @@ h4 {
 
   .example_c:hover {
     color: #ffffff !important;
-    background: #d64343;
-    border-color: #d64343 !important;
+    background: #000000;
+    border-color: #000000 !important;
     transition: all 0.4s ease 0s;
   }
 </style>

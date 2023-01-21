@@ -56,7 +56,7 @@ export default {
 @import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
 
 * {
-  font-family: "Montserrat", sans-serif;
+  font-family: Play-Regular;
   font-size: 18px;
 }
 
@@ -78,6 +78,14 @@ export default {
   min-height: 650px;
   right: 0;
   margin-right: 40px;
+}
+
+span{
+  font-family: "Montserrat", sans-serif;
+}
+
+li:active{
+  transform: scale(1.04);
 }
 
 .icon {
@@ -137,6 +145,7 @@ ul {
 .button:hover,
 .button:hover .tooltip,
 .button:hover .tooltip::before {
+  transition: all 0.2s ease 0s;
   background: #0e0e0e;
   color: #ffffff;
 }

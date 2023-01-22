@@ -11,6 +11,10 @@
     <div v-if="isThirdPage">
       <LookbookContent />
     </div>
+
+    <div>
+      <ContactContent />
+    </div>
   </div>
 </template>
 
@@ -18,12 +22,14 @@
 import ProjectsContent from './PageContent/ProjectsContent.vue'
 import DesignsContent from './PageContent/DesignsContent.vue'
 import LookbookContent from './PageContent/LookbookContent.vue'
+import ContactContent from './PageContent/ContactContent.vue'
 
 export default {
   components: {
     ProjectsContent,
     DesignsContent,
-    LookbookContent
+    LookbookContent,
+    ContactContent
   },
   props: {
     pageNumber: {

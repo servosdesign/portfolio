@@ -1,19 +1,20 @@
 const lookbookContent = {
-  civLogo: {
-    order: 0,
-    imageSrc: '../src/assets/images/civlogo.png'
-  },
+
   musicPage: {
-    order: 1,
+    order: 0,
     imageSrc: '../src/assets/images/musicpage.png'
   },
   designPage: {
-    order: 2,
+    order: 1,
     imageSrc: '../src/assets/images/designpage.png'
   },
   projectsPage: {
-    order: 3,
+    order: 2,
     imageSrc: '../src/assets/images/codingpage.png'
+  },
+  civLogo: {
+    order: 3,
+    imageSrc: '../src/assets/images/civlogo.png'
   },
   civme: {
     order: 4,

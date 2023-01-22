@@ -88,30 +88,4 @@ img {
   height: 50px;
   float: left;
 }
-
-img:hover{
-  opacity: 1;
-    -webkit-animation: flash 1s;
-    animation: flash 1s;
-}
-
-@-webkit-keyframes flash {
-  0% {
-    opacity: .3;
-  }
-
- 100% {
-    opacity: 1;
-  }
-}
-
-@keyframes flash {
-  0% {
-    opacity: .3;
-  }
-
-  100% {
-    opacity: 1;
-  }
-}
 </style>

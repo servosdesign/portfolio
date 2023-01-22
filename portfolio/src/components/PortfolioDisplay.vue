@@ -15,9 +15,9 @@
 </template>
 
 <script>
-import ProjectsContent from './ProjectsContent.vue'
-import DesignsContent from './DesignsContent.vue'
-import LookbookContent from './LookbookContent.vue'
+import ProjectsContent from './PageContent/ProjectsContent.vue'
+import DesignsContent from './PageContent/DesignsContent.vue'
+import LookbookContent from './PageContent/LookbookContent.vue'
 
 export default {
   components: {

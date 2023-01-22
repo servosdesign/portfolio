@@ -37,7 +37,7 @@
                 :href="project.leftAligned[index].link"
                 target="_blank"
                 rel="nofollow noopener"
-              > <h4>Visit</h4></a>
+              > <h4>Github</h4></a>
             </div>
           </div>
         </div>
@@ -58,7 +58,7 @@
                 :href="project.rightAligned[index].link"
                 target="_blank"
                 rel="nofollow noopener"
-              > <h4>Visit</h4></a>
+              > <h4>GitHub</h4></a>
             </div>
           </div>
           <div class="repo-img">
@@ -79,13 +79,14 @@
 </template>
 
 <script>
-import designContent from '../assets/data/designs-config.js'
+import projectContent from '../../assets/configs/projects-config.js'
+import numberOfProjectsArrayLength from '../../assets/configs/config.js'
 
 export default {
   data () {
     return {
-      projects: designContent,
-      numberOfProjects: [0, 1, 2]
+      projects: projectContent,
+      numberOfProjects: numberOfProjectsArrayLength
     }
   },
   mounted () {

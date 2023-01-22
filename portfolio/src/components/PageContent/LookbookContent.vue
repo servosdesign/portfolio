@@ -13,7 +13,7 @@
 </template>
 
 <script>
-import lookbookContent from '../assets/data/lookbook-config.js'
+import lookbookContent from '../../assets/configs/lookbook-config.js'
 
 export default {
   data () {

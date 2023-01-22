@@ -2,6 +2,7 @@
   <div>
     <CustomHeader />
     <TraverseButtons
+      v-if="buttonVisible"
       :increase-page-number="increasePageNumber"
       :decrease-page-number="decreasePageNumber"
       :button-name="buttonName"
@@ -21,12 +22,13 @@ export default {
   components: {
     CustomHeader,
     PortfolioDisplay,
-    CustomFooter,
-    TraverseButtons
+    TraverseButtons,
+    CustomFooter
   },
   data () {
     return {
       pageNumber: 0,
+      buttonVisible: false,
       buttonName: {
         next: '',
         previous: ''
@@ -55,6 +57,9 @@ export default {
   created () {
     this.loadDefaultButtonNames()
   },
+  mounted () {
+    window.addEventListener('scroll', this.scrollFunction)
+  },
   methods: {
     increasePageNumber () {
       if (this.pageNumber === 2) {
@@ -64,6 +69,7 @@ export default {
       }
     },
     decreasePageNumber () {
+      this.buttonVisible = false
       if (this.pageNumber === 0) {
         this.pageNumber = 2
       } else {
@@ -73,12 +79,17 @@ export default {
     loadDefaultButtonNames () {
       this.buttonName.next = 'Designs'
       this.buttonName.previous = 'Lookbook'
+    },
+    scrollFunction () {
+      this.buttonVisible = true
     }
   }
 }
 </script>
 
 <style>
+::-webkit-scrollbar {display:none;}
+
 @font-face {
   src: url(./assets/fonts/wan.ttf);
   font-family: Wan;

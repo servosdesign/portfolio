@@ -14,15 +14,11 @@
           class="list-wrapper"
         >
           <div class="repo-img">
-            <a
-              :href="project.leftAligned[index].link"
-              target="_blank"
-              rel="noopener noreferrer"
-            ><img
+            <img
               class="design2"
               :src="project.leftAligned[index].imageSrc"
               alt=""
-            ></a>
+            >
           </div>
 
           <div class="list-description">
@@ -62,15 +58,11 @@
             </div>
           </div>
           <div class="repo-img">
-            <a
-              :href="project.rightAligned[index].link"
-              target="_blank"
-              rel="noopener noreferrer"
-            ><img
+            <img
               class="design2"
               :src="project.rightAligned[index].imageSrc"
               alt=""
-            ></a>
+            >
           </div>
         </div>
       </div>
@@ -101,6 +93,9 @@ export default {
 </script>
 
 <style scoped>
+img:hover {
+  cursor: default;
+}
 .list-wrapper {
   display: flex;
   margin: 0 auto;

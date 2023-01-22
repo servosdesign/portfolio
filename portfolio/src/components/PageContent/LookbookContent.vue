@@ -41,6 +41,9 @@ export default {
     margin: 0 auto;
     margin-top: 100px;
 }
+img:hover {
+  cursor: default;
+}
 div {
   width: 100%;
 }

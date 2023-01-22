@@ -29,9 +29,10 @@
                 </div>
               </div>
               <form
+                id="form-data"
                 class="screen-body-item"
-                action="contactform.php"
                 method="post"
+                action="contactform.php"
               >
                 <div class="app-form">
                   <div class="app-form-group">
@@ -90,7 +91,7 @@ export default {
       contactData: contactContent
     }
   },
-  mounted () {
+  created () {
     this.scrollToTop()
   },
   methods: {

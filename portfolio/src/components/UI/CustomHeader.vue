@@ -7,11 +7,6 @@
         alt=""
       ></a>
     </div>
-    <nav>
-      <ul>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
   </header>
 </template>
 

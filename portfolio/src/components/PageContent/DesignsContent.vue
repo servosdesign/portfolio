@@ -14,15 +14,11 @@
           class="list-wrapper"
         >
           <div class="repo-img">
-            <a
-              :href="project.leftAligned[index].link"
-              target="_blank"
-              rel="noopener noreferrer"
-            ><img
+            <img
               class="design2"
               :src="project.leftAligned[index].imageSrc"
               alt=""
-            ></a>
+            >
           </div>
 
           <div class="list-description">
@@ -62,15 +58,11 @@
             </div>
           </div>
           <div class="repo-img">
-            <a
-              :href="project.rightAligned[index].link"
-              target="_blank"
-              rel="noopener noreferrer"
-            ><img
+            <img
               class="design2"
               :src="project.rightAligned[index].imageSrc"
               alt=""
-            ></a>
+            >
           </div>
         </div>
       </div>
@@ -100,6 +92,10 @@ export default {
 </script>
 
 <style scoped>
+img:hover {
+  cursor: default;
+}
+
 .list-wrapper {
   display: flex;
   margin: 0 auto;
@@ -181,19 +177,19 @@ h4 {
 }
 
 .example_c {
-    font-family: Wan;
-    letter-spacing: 1px;
-    color: black;
-    line-height: 7px;
-    font-size: 9px;
-    height: 7px;
-    text-transform: none;
-    text-decoration: none;
-    background: #ffffff;
-    padding: 4px;
-    border: 1px solid #000000 !important;
-    display: inline-block;
-    transition: all 0.4s ease 0s;
+  font-family: Wan;
+  letter-spacing: 1px;
+  color: black;
+  line-height: 7px;
+  font-size: 9px;
+  height: 7px;
+  text-transform: none;
+  text-decoration: none;
+  background: #ffffff;
+  padding: 4px;
+  border: 1px solid #000000 !important;
+  display: inline-block;
+  transition: all 0.4s ease 0s;
   }
 
   .example_c:hover {

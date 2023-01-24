@@ -11,6 +11,6 @@
   $txt = "Name: ".$name."\n\n".$msg;
 
    mail($mailTo, $subject, $txt, $headers);
-   header("Location: /");
+   header("Location: contact.html?mailsend");
    
  }

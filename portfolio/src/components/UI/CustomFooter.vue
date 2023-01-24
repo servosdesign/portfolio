@@ -1,5 +1,6 @@
 <template>
   <footer>
+    <!--
     <div id="wrapper-lm">
       <ul>
         <li>
@@ -13,6 +14,7 @@
         </li>
       </ul>
     </div>
+    -->
     <div id="wrapper-sm">
       <ul>
         <li>

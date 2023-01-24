@@ -27,13 +27,35 @@
               {{ project.leftAligned[index].description }}
             </p>
             <h3>{{ project.leftAligned[index].tag }}</h3>
-            <div class="repo-button">
+            <div
+              v-if="!project.leftAligned[index].uniqueButton"
+              class="repo-button"
+            >
               <a
                 class="example_c"
                 :href="project.leftAligned[index].link"
                 target="_blank"
                 rel="nofollow noopener"
               > <h4>Github</h4></a>
+            </div>
+            <div v-if="project.leftAligned[index].uniqueButton">
+              <div class="repo-button">
+                <a
+                  class="example_c vue"
+                  :href="project.leftAligned[index].link"
+                  target="_blank"
+                  rel="nofollow noopener"
+                > <h4>Vue.js</h4></a>
+              </div>
+              <div class="repo-button unique">
+                <a
+                  class="example_c javascript"
+                  :href="project.leftAligned[index].uniqueLink"
+                  target="_blank"
+                  rel="nofollow noopener"
+                >
+                  <h4>JavaScript</h4></a>
+              </div>
             </div>
           </div>
         </div>
@@ -172,6 +194,10 @@ img:hover {
   padding-left: 50px;
 }
 
+.unique {
+  padding-left: 10px;
+}
+
 h4 {
   margin: 0;
 }
@@ -198,4 +224,18 @@ h4 {
     border-color: #000000 !important;
     transition: all 0.4s ease 0s;
   }
+
+  .vue:hover {
+    color: #ffffff !important;
+    background: #41B883;
+    border-color: #41B883;
+    transition: all 0.4s ease 0s;
+}
+
+.javascript:hover{
+  color: #000000 !important;
+  background: #FFFF00;
+  border-color: #FFFF00;
+  transition: all 0.4s ease 0s;
+}
 </style>

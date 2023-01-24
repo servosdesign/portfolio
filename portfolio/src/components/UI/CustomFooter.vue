@@ -27,7 +27,7 @@
       </ul>
       <div>
         <a
-          href="https://i0n2.bandcamp.com/releases"
+          href="https://soundcloud.com/n90713486/sets/mixes/s-9G0FcyJTP0H?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing"
           target="_blank"
           rel="noopener noreferrer"
         >

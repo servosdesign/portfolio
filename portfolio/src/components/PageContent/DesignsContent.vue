@@ -70,26 +70,7 @@
   </div>
 </template>
 
-<script>
-import designContent from '../../assets/configs/designs-config.js'
-
-export default {
-  data () {
-    return {
-      projects: designContent,
-      numberOfProjects: [0, 1, 2]
-    }
-  },
-  mounted () {
-    this.scrollToTop()
-  },
-  methods: {
-    scrollToTop () {
-      window.scrollTo({ top: 0, left: 0, behavior: 'instant' })
-    }
-  }
-}
-</script>
+<script lang="ts" src="./DesignsContent.ts" />
 
 <style scoped>
 img:hover {

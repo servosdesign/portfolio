@@ -69,7 +69,6 @@ export default {
       }
     },
     decreasePageNumber () {
-      this.buttonVisible = false
       if (this.pageNumber === 0) {
         this.pageNumber = 2
       } else {

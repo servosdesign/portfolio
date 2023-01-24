@@ -12,26 +12,7 @@
   </div>
 </template>
 
-<script>
-import lookbookContent from '../../assets/configs/lookbook-config.js'
-
-export default {
-  data () {
-    return {
-      lookbook: lookbookContent
-    }
-  },
-  mounted () {
-    this.scrollToTop()
-  },
-  methods: {
-    scrollToTop () {
-      window.scrollTo({ top: 0, left: 0, behavior: 'instant' })
-    }
-  }
-}
-
-</script>
+<script lang="ts" src="./LookbookContent.ts" />
 
 <style scoped>
 .wrapper{

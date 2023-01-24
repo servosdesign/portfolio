@@ -82,25 +82,7 @@
   </section>
 </template>
 
-<script>
-import contactContent from '../../assets/configs/contact-config.js'
-
-export default {
-  data () {
-    return {
-      contactData: contactContent
-    }
-  },
-  created () {
-    this.scrollToTop()
-  },
-  methods: {
-    scrollToTop () {
-      window.scrollTo({ top: 0, left: 0, behavior: 'instant' })
-    }
-  }
-}
-</script>
+<script lang="ts" src="./ContactContent.ts" />
 
 <style scoped>
 

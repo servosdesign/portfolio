@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="top">
     <div
       v-for="(index) in numberOfProjects"
       :key="index"
@@ -10,7 +10,7 @@
       >
         <!--LEFT-->
         <div
-          v-if="project.leftAligned [index] !== undefined"
+          v-if="project.leftAligned[index] !== undefined"
           class="list-wrapper"
         >
           <div class="repo-img">
@@ -26,6 +26,7 @@
             <p>
               {{ project.leftAligned[index].description }}
             </p>
+
             <h3>{{ project.leftAligned[index].tag }}</h3>
             <div
               v-if="!project.leftAligned[index].uniqueButton"
@@ -36,7 +37,9 @@
                 :href="project.leftAligned[index].link"
                 target="_blank"
                 rel="nofollow noopener"
-              > <h4>Github</h4></a>
+              >
+                <h4>Github</h4>
+              </a>
             </div>
             <div v-if="project.leftAligned[index].uniqueButton">
               <div class="repo-button">
@@ -45,7 +48,9 @@
                   :href="project.leftAligned[index].link"
                   target="_blank"
                   rel="nofollow noopener"
-                > <h4>Vue.js</h4></a>
+                >
+                  <h4>Vue.js</h4>
+                </a>
               </div>
               <div class="repo-button unique">
                 <a
@@ -54,21 +59,20 @@
                   target="_blank"
                   rel="nofollow noopener"
                 >
-                  <h4>JavaScript</h4></a>
+                  <h4>JavaScript</h4>
+                </a>
               </div>
             </div>
           </div>
         </div>
-        <!--RIGHT-->
+        <!--RIGHT
         <div
           v-if="project.rightAligned[index] !== undefined"
-          class="list-wrapper"
+          class="list-wrapper move"
         >
           <div class="list-description">
             <h2>{{ project.rightAligned[index].title }}</h2>
-            <p>
-              {{ project.rightAligned[index].description }}
-            </p>
+            <p>{{ project.rightAligned[index].description }}</p>
             <h3>{{ project.rightAligned[index].tag }}</h3>
             <div class="repo-button">
               <a
@@ -76,7 +80,9 @@
                 :href="project.rightAligned[index].link"
                 target="_blank"
                 rel="nofollow noopener"
-              > <h4>GitHub</h4></a>
+              >
+                <h4>GitHub</h4>
+              </a>
             </div>
           </div>
           <div class="repo-img">
@@ -87,8 +93,10 @@
             >
           </div>
         </div>
+            -->
       </div>
     </div>
+    <div class="bottom" />
   </div>
 </template>
 
@@ -121,12 +129,17 @@ img:hover {
 .list-wrapper {
   display: flex;
   margin: 0 auto;
+  height: 250px;
   justify-content: center;
   align-items: center;
 }
 
+.top {
+  margin-top: 40px;
+}
+
 .repo-img{
-  width: 562px;
+  width: 200px;
 }
 
 .repo-img img{
@@ -135,14 +148,21 @@ img:hover {
   padding: 0px 0px 0px 0px;
 }
 
+.bottom {
+  margin-bottom: 40px;
+}
+
 .repo-img:hover{
   transition: .5s ease;
 }
 
 .list-description{
   width: 562px;
-  height: 562px;
   padding-top: 0;
+}
+
+.move {
+  padding-left: 350px;
 }
 
 .list-description h2 {
@@ -155,7 +175,7 @@ img:hover {
   line-height: 10px;
   font-size: 9px;
   text-transform: uppercase;
-  padding: 200px 0px 0px 50px;
+  padding: 0px 0px 0px 50px;
   margin: 0;
 }
 

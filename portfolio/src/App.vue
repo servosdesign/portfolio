@@ -8,22 +8,29 @@
       :button-name="buttonName"
     />
     <PortfolioDisplay :page-number="pageNumber" />
-    <CustomFooter />
   </div>
 </template>
 
 <script>
 import CustomHeader from './components/UI/CustomHeader.vue'
 import PortfolioDisplay from './components/PortfolioDisplay.vue'
-import CustomFooter from './components/UI/CustomFooter.vue'
 import TraverseButtons from './components/UI/TraverseButtons.vue'
+
+/*
+    Todo:
+      - Add routing for the pages
+      - Pre-load images
+      - Set up image display when click project images
+      - Make pages more centered
+      - Make footer smaller, only buttons no text for links
+      - Make footer wait to load based on components above it
+*/
 
 export default {
   components: {
     CustomHeader,
     PortfolioDisplay,
-    TraverseButtons,
-    CustomFooter
+    TraverseButtons
   },
   data () {
     return {
@@ -114,5 +121,14 @@ html {
 
 body {
   background-color: #ffffff;
+}
+
+html {
+  background-image: url('../public/images/codecrecordings.png'),
+    url('../public/images/methuselahrecords.png'),
+    url('../public/images/servos.png'),
+    url('../public/images/civlogo.png'),
+    url('../public/images/civme.png');
+    background-size: 0;
 }
 </style>

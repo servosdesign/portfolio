@@ -3,7 +3,7 @@
     <div class="header-brand">
       <a href="/"><img
         class="img-icon"
-        src="../../assets/images/header-logo.png"
+        src="../../../public/images/header-logo.png"
         alt=""
       ></a>
     </div>

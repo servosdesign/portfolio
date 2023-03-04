@@ -1,5 +1,6 @@
 <template>
   <section class="contact-page">
+    <div class="centered-border" />
     <div class="wrapper-pro3">
       <div class="second2">
         <img
@@ -79,13 +80,18 @@
         </div>
       </div>
     </div>
+    <CustomFooter />
   </section>
 </template>
 
 <script>
 import contactContent from '../../assets/configs/contact-config.js'
+import CustomFooter from '../UI/CustomFooter.vue'
 
 export default {
+  components: {
+    CustomFooter
+  },
   data () {
     return {
       contactData: contactContent
@@ -131,6 +137,12 @@ input {
   vertical-align: middle;
 }
 
+.centered-border {
+  margin: 0 auto;
+  width: 400px;
+  border-top: 1px solid #ffffff;
+}
+
 /** contact mobile **/
 
 .example_c {
@@ -140,6 +152,7 @@ input {
 .wrapper-pro3 {
   display: flex;
   flex-direction: column;
+  background-color: white;
 }
 
 .contact-img {
@@ -163,7 +176,7 @@ input {
   }
 
   .contact-page {
-    background-color: #f3f3f3;
+    background-color: white;
     padding-bottom: 24px;
   }
 
@@ -256,7 +269,6 @@ input {
   flex: 0 1 700px;
   margin: auto;
   padding: 10px;
-  padding-bottom: 148px;
 }
 
 .screen {

@@ -95,12 +95,12 @@ export default {
 ::-webkit-scrollbar {display:none;}
 
 @font-face {
-  src: url(../src/assets/fonts/wan.ttf);
+  src: url(./assets/fonts/wan.ttf);
   font-family: Wan;
 }
 
 @font-face {
-  src: url(../src/assets/fonts/Play-Regular.ttf);
+  src: url(./assets/fonts/Play-Regular.ttf);
   font-family: Play-Regular
 }
 
@@ -121,11 +121,11 @@ body {
 }
 
 html {
-  background-image: url('../src/assets/images/codecrecordings.png'),
-    url('../src/assets/images/methuselahrecords.png'),
-    url('../src/assets/images/servos.png'),
-    url('../src/assets/images/civlogo.png'),
-    url('../src/assets/images/civme.png');
+  background-image: url('/images/codecrecordings.png'),
+    url('/images/methuselahrecords.png'),
+    url('/images/servos.png'),
+    url('/images/civlogo.png'),
+    url('/images/civme.png');
     background-size: 0;
 }
 </style>

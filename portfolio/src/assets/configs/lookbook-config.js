@@ -1,35 +1,35 @@
 const lookbookContent = {
   civme: {
     order: 0,
-    imageSrc: '../src/assets/images/civme.png'
+    imageSrc: '/images/civme.png'
   },
   civLogo: {
     order: 1,
-    imageSrc: '../src/assets/images/civlogo.png'
+    imageSrc: '/images/civlogo.png'
   },
   musicPage: {
     order: 2,
-    imageSrc: '../src/assets/images/musicpage.png'
+    imageSrc: '/images/musicpage.png'
   },
   designPage: {
     order: 3,
-    imageSrc: '../src/assets/images/designpage.png'
+    imageSrc: '/images/designpage.png'
   },
   projectsPage: {
     order: 4,
-    imageSrc: '../src/assets/images/codingpage.png'
+    imageSrc: '/images/codingpage.png'
   },
   ladder: {
     order: 5,
-    imageSrc: '../src/assets/images/ladder.png'
+    imageSrc: '/images/ladder.png'
   },
   keys: {
     order: 6,
-    imageSrc: '../src/assets/images/keys.png'
+    imageSrc: '/images/keys.png'
   },
   logos: {
     order: 7,
-    imageSrc: '../src/assets/images/logos.png'
+    imageSrc: '/images/logos.png'
   }
 }
 export default lookbookContent

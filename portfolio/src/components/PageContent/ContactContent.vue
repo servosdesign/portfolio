@@ -36,7 +36,7 @@
                     >
                       <img
                         class="img-gh"
-                        src="../../assets/images//github-logo.png"
+                        src="/images//github-logo.png"
                         alt=""
                       ></a>
                   </div>

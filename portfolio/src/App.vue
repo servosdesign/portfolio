@@ -1,12 +1,14 @@
 <template>
   <div>
     <CustomHeader />
+    <!--
     <TraverseButtons
       v-if="buttonVisible"
       :increase-page-number="increasePageNumber"
       :decrease-page-number="decreasePageNumber"
       :button-name="buttonName"
     />
+    -->
     <PortfolioDisplay :page-number="pageNumber" />
   </div>
 </template>
@@ -14,21 +16,19 @@
 <script>
 import CustomHeader from './components/UI/CustomHeader.vue'
 import PortfolioDisplay from './components/PortfolioDisplay.vue'
-import TraverseButtons from './components/UI/TraverseButtons.vue'
 
 /*
     Todo:
       - Add routing for the pages
-      - Pre-load images
       - Set up image display when click project images
-      - Make pages more centered
+      - Make lookbook more centered
+      - mobile
 */
 
 export default {
   components: {
     CustomHeader,
-    PortfolioDisplay,
-    TraverseButtons
+    PortfolioDisplay
   },
   data () {
     return {
@@ -92,7 +92,6 @@ export default {
 </script>
 
 <style>
-::-webkit-scrollbar {display:none;}
 
 @font-face {
   src: url(./assets/fonts/wan.ttf);

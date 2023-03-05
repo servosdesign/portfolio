@@ -57,7 +57,7 @@ export default {
 
 * {
   font-family: Play-Regular;
-  font-size: 18px;
+  font-size: 14px;
 }
 
 .previousButton{
@@ -94,14 +94,13 @@ li:active{
   border-radius: 50%;
   padding: 15px;
   margin: 10px;
-  width: 50px;
-  height: 50px;
+  width: 25px;
+  height: 25px;
   font-size: 18px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
   cursor: pointer;
   transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
@@ -113,7 +112,6 @@ li:active{
   color: #ffffff;
   padding: 5px 8px;
   border-radius: 5px;
-  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
   opacity: 0;
   pointer-events: none;
   transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);

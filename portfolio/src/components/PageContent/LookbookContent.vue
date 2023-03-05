@@ -7,15 +7,21 @@
       <img
         :src="items.imageSrc"
         alt=""
+        rel="preload"
       >
     </div>
+    <ContactContent />
   </div>
 </template>
 
 <script>
 import lookbookContent from '../../assets/configs/lookbook-config.js'
+import ContactContent from './ContactContent.vue'
 
 export default {
+  components: {
+    ContactContent
+  },
   data () {
     return {
       lookbook: lookbookContent

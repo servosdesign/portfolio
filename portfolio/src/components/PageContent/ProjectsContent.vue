@@ -18,6 +18,7 @@
               class="design2"
               :src="project.leftAligned[index].imageSrc"
               alt=""
+              rel="preload"
             >
           </div>
 
@@ -97,14 +98,19 @@
       </div>
     </div>
     <div class="bottom" />
+    <ContactContent />
   </div>
 </template>
 
 <script>
 import projectContent from '../../assets/configs/projects-config.js'
 import numberOfProjectsArrayLength from '../../assets/configs/config.js'
+import ContactContent from './ContactContent.vue'
 
 export default {
+  components: {
+    ContactContent
+  },
   data () {
     return {
       projects: projectContent,

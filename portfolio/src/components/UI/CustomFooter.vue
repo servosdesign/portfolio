@@ -15,34 +15,6 @@
       </ul>
     </div>
     -->
-    <div id="wrapper-sm">
-      <ul>
-        <li>
-          <h2>github: </h2>
-        </li>
-        <li>
-          <h2>contact: </h2>
-        </li>
-      </ul>
-      <div>
-        <a
-          href="https://github.com/servosdesign"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img
-            class="img-gh"
-            src="../../../public/images//github-logo.png"
-            alt=""
-          ></a>
-        <a href="mailto:servos.design0@gmail.com">
-          <img
-            class="img-email"
-            src="../../../public/images/email-logo.png"
-            alt=""
-          ></a>
-      </div>
-    </div>
     <div class="scroll-wrapper">
       <ScrollButton />
     </div>
@@ -69,7 +41,6 @@ justify-content: center;
 width: 99%;
 align-items: center;
 position: absolute;
-margin-top: 100px;
 }
 
 #wrapper-sm{

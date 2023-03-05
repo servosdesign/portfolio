@@ -22,8 +22,6 @@ import TraverseButtons from './components/UI/TraverseButtons.vue'
       - Pre-load images
       - Set up image display when click project images
       - Make pages more centered
-      - Make footer smaller, only buttons no text for links
-      - Make footer wait to load based on components above it
 */
 
 export default {
@@ -76,7 +74,6 @@ export default {
       }
     },
     decreasePageNumber () {
-      this.buttonVisible = false
       if (this.pageNumber === 0) {
         this.pageNumber = 2
       } else {
@@ -98,12 +95,12 @@ export default {
 ::-webkit-scrollbar {display:none;}
 
 @font-face {
-  src: url(./assets/fonts/wan.ttf);
+  src: url(../src/assets/fonts/wan.ttf);
   font-family: Wan;
 }
 
 @font-face {
-  src: url(./assets/fonts/Play-Regular.ttf);
+  src: url(../src/assets/fonts/Play-Regular.ttf);
   font-family: Play-Regular
 }
 
@@ -124,11 +121,11 @@ body {
 }
 
 html {
-  background-image: url('../public/images/codecrecordings.png'),
-    url('../public/images/methuselahrecords.png'),
-    url('../public/images/servos.png'),
-    url('../public/images/civlogo.png'),
-    url('../public/images/civme.png');
+  background-image: url('../src/assets/images/codecrecordings.png'),
+    url('../src/assets/images/methuselahrecords.png'),
+    url('../src/assets/images/servos.png'),
+    url('../src/assets/images/civlogo.png'),
+    url('../src/assets/images/civme.png');
     background-size: 0;
 }
 </style>

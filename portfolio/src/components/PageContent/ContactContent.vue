@@ -6,6 +6,7 @@
         <img
           class="contact-img"
           :src="contactData.imageSrc"
+          rel="preload"
           alt=""
         >
       </div>
@@ -27,6 +28,18 @@
                 </div>
                 <div class="app-contact">
                   {{ contactData.email }}
+                  <div class="github-button">
+                    <a
+                      href="https://github.com/servosdesign"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img
+                        class="img-gh"
+                        src="../../assets/images//github-logo.png"
+                        alt=""
+                      ></a>
+                  </div>
                 </div>
               </div>
               <form
@@ -147,6 +160,16 @@ input {
 
 .example_c {
   display: none;
+}
+
+img {
+  width: 50px;
+  height: 50px;
+  float: left;
+}
+
+.github-button {
+  margin-top: 20px;
 }
 
 .wrapper-pro3 {

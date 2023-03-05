@@ -18,6 +18,7 @@
               class="design2"
               :src="project.leftAligned[index].imageSrc"
               alt=""
+              rel="preload"
             >
           </div>
 
@@ -62,18 +63,24 @@
               class="design2"
               :src="project.rightAligned[index].imageSrc"
               alt=""
+              rel="preload"
             >
           </div>
         </div>
       </div>
     </div>
+    <ContactContent />
   </div>
 </template>
 
 <script>
 import designContent from '../../assets/configs/designs-config.js'
+import ContactContent from './ContactContent.vue'
 
 export default {
+  components: {
+    ContactContent
+  },
   data () {
     return {
       projects: designContent,

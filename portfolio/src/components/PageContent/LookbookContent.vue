@@ -1,8 +1,9 @@
 <template>
-  <div class="wrapper">
+  <div class="wrapper-lookbook">
     <div
       v-for="items in lookbook"
       :key="items.order"
+      class="content"
     >
       <img
         :src="items.imageSrc"
@@ -10,7 +11,9 @@
         rel="preload"
       >
     </div>
-    <ContactContent />
+    <div class="bottom">
+      <ContactContent />
+    </div>
   </div>
 </template>
 
@@ -40,21 +43,21 @@ export default {
 </script>
 
 <style scoped>
-.wrapper{
+.wrapper-lookbook{
   display: flex;
-    justify-content: center;
-    flex-flow: row wrap;
-    margin: 0 auto;
-    margin-top: 100px;
-}
-img:hover {
-  cursor: default;
-}
-div {
-  width: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 auto;
 }
 img {
-  display:block;
-    margin:auto;
+  cursor: default;
+  width: 100%;
+  height: 500px;
 }
+
+.bottom {
+  width: 100%;
+}
+
 </style>

@@ -9,6 +9,12 @@
       :button-name="buttonName"
     />
     -->
+    <button @click="increasePageNumber">
+      next
+    </button>
+    <button @click="decreasePageNumber">
+      prev
+    </button>
     <PortfolioDisplay
       :page-number="pageNumber"
       :text-language="textLanguage"
@@ -24,7 +30,6 @@ import PortfolioDisplay from './components/PortfolioDisplay.vue'
     Todo:
       - Add routing for the pages
       - re-style contact component, fonts, sizing, images, colors, everything
-      - Add russian language toggle (design page only now)
       - Set up image display transitions when click project images
       - Make lookbook more centered
       - mobile

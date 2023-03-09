@@ -2,14 +2,6 @@
   <section class="contact-page">
     <div class="centered-border" />
     <div class="wrapper-pro3">
-      <div class="second2">
-        <img
-          class="contact-img"
-          :src="contactData.imageSrc"
-          rel="preload"
-          alt=""
-        >
-      </div>
       <div class="background">
         <div class="container">
           <div class="screen">
@@ -22,7 +14,7 @@
             </div>
             <div class="screen-body">
               <div class="screen-body-item left">
-                <div class="app-title">
+                <div class="app-title di">
                   <span>{{ contactData.description }}</span>
                   <span />
                 </div>
@@ -156,8 +148,6 @@ input {
   border-top: 1px solid #ffffff;
 }
 
-/** contact mobile **/
-
 .example_c {
   display: none;
 }
@@ -172,10 +162,23 @@ img {
   margin-top: 20px;
 }
 
+button {
+  font-family: Play-Regular;
+  color: #111;
+  letter-spacing: 4px;
+  color: black;
+  line-height: 10px;
+  font-size: 14px;
+  text-transform: uppercase;
+  padding-top: 8px;
+}
+
 .wrapper-pro3 {
   display: flex;
   flex-direction: column;
   background-color: white;
+  margin-bottom: 20px;
+  margin-top: 100px;
 }
 
 .contact-img {
@@ -187,71 +190,62 @@ img {
   order: 1;
 }
 
-/** contact web **/
-
-@media only screen and (min-width:1000px) {
-
-  .wrapper-pro3 {
-    display: flex;
-    justify-content: center;
-    padding: 0px 0px 173px 0px;
-    flex-direction: row;
-  }
-
-  .contact-page {
-    background-color: white;
-    padding-bottom: 24px;
-  }
-
-  .contact-page h2 {
-    font-family: Wan;
-    height: 30%;
-    letter-spacing: 4px;
-    color: black;
-    line-height: 10px;
-    font-size: 9px;
-    text-transform: uppercase;
-    padding: 30px 0px 100px 0px;
-    margin: 0;
-  }
-
-  .contact-page h3 {
-    font-family: Wan;
-    height: 30%;
-    letter-spacing: 4px;
-    color: black;
-    line-height: 10px;
-    font-size: 5px;
-    text-transform: uppercase;
-    text-transform: bold;
-    padding: 10px 0px 0px 0px;
-    margin: 0;
-  }
-
-  .contact-page p {
-    font-family: Wan;
-    letter-spacing: 0px;
-    color: black;
-    line-height: 15px;
-    font-size: 8px;
-    text-transform: none;
-    padding: 15px 0px 0px 0px;
-    margin: 0;
-  }
-
-  .contact-img {
-    padding: 0px 0px 0px 0px;
-  }
-
-  .second2 {
-    order: 2;
-    display: inline-block;
-    max-height: 500px;
-    overflow: hidden;
-  }
+.wrapper-pro3 {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
 }
 
-/* contact form */
+.contact-page {
+  background-color: white;
+  padding-bottom: 24px;
+}
+
+.contact-page h2 {
+  font-family: Wan;
+  height: 30%;
+  letter-spacing: 4px;
+  color: black;
+  line-height: 10px;
+  font-size: 9px;
+  text-transform: uppercase;
+  padding: 30px 0px 100px 0px;
+  margin: 0;
+}
+
+.contact-page h3 {
+  font-family: Wan;
+  height: 30%;
+  letter-spacing: 4px;
+  color: black;
+  line-height: 10px;
+  font-size: 5px;
+  text-transform: uppercase;
+  padding: 10px 0px 0px 0px;
+  margin: 0;
+}
+
+.contact-page p {
+  font-family: Wan;
+  letter-spacing: 0px;
+  color: black;
+  line-height: 15px;
+  font-size: 8px;
+  text-transform: none;
+  padding: 15px 0px 0px 0px;
+  margin: 0;
+}
+
+.contact-img {
+  padding: 0px 0px 0px 0px;
+}
+
+.second2 {
+  order: 2;
+  display: inline-block;
+  max-height: 500px;
+  overflow: hidden;
+}
 
 .wrapper-pro3 {
   padding: 0;
@@ -266,41 +260,29 @@ img {
   order: 2;
 }
 
-@media only screen and (min-width:1000px) {
-  .contact-img {
-    height: 861px;
-    width: 807px;
-    display: block;
-    margin: auto;
-  }
-}
-
 .background {
-  padding-top: 20px;
-}
-
-@media only screen and (min-width:1000px) {
-  .background {
-    padding-top: 170px;
-    display: flex;
-    height: 100%;
-    padding-bottom: 46px;
-  }
+  padding-top: 40px;
+  display: flex;
+  height: 100%;
+  padding-bottom: 46px;
 }
 
 .container {
   flex: 0 1 700px;
   margin: auto;
   padding: 10px;
+  background-color: white;
+  height: 230px;
 }
 
 .screen {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 700;
-  letter-spacing: 1.4px;
-  position: relative;
-  background: #ffffff;
-  border-radius: 15px;
+  font-family: Play-Regular;
+  color: #111;
+  letter-spacing: 4px;
+  color: black;
+  line-height: 10px;
+  font-size: 14px;
+  text-transform: uppercase;
 }
 
 .screen:after {
@@ -311,22 +293,23 @@ img {
   left: 20px;
   right: 20px;
   bottom: 0;
-  border-radius: 15px;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, .4);
+  box-shadow: 0 10px 20px rgba(238, 238, 238, 0.4);
   z-index: -1;
 }
 
 .screen-body {
   display: flex;
-  border-radius: 15px;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, .4);
+  box-shadow: 0 10px 20px rgba(238, 238, 238, 0.4);
   z-index: -1;
 }
 
 .screen-body-item {
-
   flex: 1;
   padding: 50px;
+}
+
+.di{
+  padding-top: 15px;
 }
 
 .screen-body-item.left {
@@ -334,29 +317,18 @@ img {
   flex-direction: column;
 }
 
+.img-gh{
+  padding-top: 30px;
+}
+
 .app-title {
   display: flex;
   flex-direction: column;
   position: relative;
-  color: #e43f55;
-  font-size: 17px;
-}
-
-.app-title:after {
-
-  content: '';
-  display: block;
-  position: absolute;
-  left: 0;
-  bottom: -10px;
-  width: 25px;
-  height: 4px;
-  background: #e43f55;
-  ;
 }
 
 .app-contact {
-  margin-top: auto;
+  margin-top: 15px;
   font-weight: 700;
   font-size: 7px;
   color: #888;
@@ -372,20 +344,23 @@ img {
 }
 
 .app-form-control {
-  font-weight: 700;
-  width: 100%;
+  width: 250px;
   padding: 10px 0;
   background: none;
   border: none;
   border-bottom: 1px solid #666;
   color: rgb(0, 0, 0);
   font-size: 14px;
+  font-family: Play-Regular;
   outline: none;
   transition: border-color .2s;
 }
 
 .app-form-control::placeholder {
   color: #666;
+  font-family: wan;
+  font-size: 9px;
+  letter-spacing: 4px;
 }
 
 .app-form-control:focus {
@@ -395,46 +370,13 @@ img {
 .app-form-button {
   background: none;
   border: none;
-  color: #e43f55;
+  color: #000000;
   font-size: 14px;
   cursor: pointer;
   outline: none;
-  font-weight: 700;
 }
 
 .app-form-button:hover {
-  color: #b9134f;
-}
-
-@media screen and (max-width: 520px) {
-  .screen-body {
-    flex-direction: column;
-  }
-
-  .screen-body-item.left {
-    margin-bottom: 30px;
-  }
-
-  .app-title {
-    flex-direction: row;
-  }
-
-  .app-title span {
-    margin-right: 12px;
-  }
-
-  .app-title:after {
-    display: none;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .screen-body {
-    padding: 40px;
-  }
-
-  .screen-body-item {
-    padding: 0;
-  }
+  color: #4d4d4d;
 }
 </style>

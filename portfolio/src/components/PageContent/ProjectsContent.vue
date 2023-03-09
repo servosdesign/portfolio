@@ -14,10 +14,15 @@
         <!--LEFT-->
         <div
           v-if="project.englishContent[index] !== undefined"
+          id="a"
           class="list-wrapper"
+          :class="'list-wrapper' + index"
         >
-          <div class="repo-img">
+          <div
+            class="repo-img"
+          >
             <img
+              id="b"
               class="design2"
               :src="project.englishContent[index].imageSrc"
               alt=""
@@ -93,6 +98,7 @@
         <div
           v-if="project.russianContent[index] !== undefined"
           class="list-wrapper"
+          :class="'list-wrapper' + index + 'russian'"
         >
           <div class="repo-img">
             <img
@@ -105,7 +111,7 @@
 
           <div
             class="list-description"
-            :class="'small'+index"
+            :class="'small'+index+'russian'"
           >
             <h2>{{ project.russianContent[index].title }}</h2>
             <p>
@@ -190,20 +196,32 @@ export default {
 </script>
 
 <style scoped>
+.small0, .small0russian{
+  margin-top: 40px;
+}
+
 img:hover {
   cursor: default;
 }
+
 .list-wrapper {
   display: flex;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   margin: 0 auto;
   height: auto;
-  min-height: 250px;
+  min-height: 200px;
+  max-height: 250px;
+  margin-bottom: 30px;
 }
 
-.top {
-  margin-top: 62px;
+.list-wrapper0{
+  margin-bottom: 0px;
+}
+
+.list-wrapper0russian{
+  margin-bottom: 0px;
+
 }
 
 .repo-img img{
@@ -212,23 +230,14 @@ img:hover {
   padding: 0px 0px 0px 0px;
 }
 
-.bottom {
-  margin-bottom: 40px;
-}
-
 .repo-img:hover{
   transition: .5s ease;
 }
 
 .list-description{
-  align-items: center;
   width: 562px;
+  height: 562px;
   padding-top: 0;
-  margin-bottom: 63px;
-}
-
-.move {
-  padding-left: 350px;
 }
 
 .list-description h2 {
@@ -241,15 +250,8 @@ img:hover {
   line-height: 10px;
   font-size: 9px;
   text-transform: uppercase;
-  padding: 0px 0px 0px 50px;
-  margin-top: 0px;
-  margin-bottom: 15px;
-}
-
-.small0{
-  /* for smaller sized descriptions */
-  margin-top: 30px;
-  margin-bottom: 0px;
+  padding: 200px 0px 0px 50px;
+  margin: 0;
 }
 
 .list-description h3 {
@@ -277,7 +279,7 @@ img:hover {
   line-height: 20px;
   font-size: 10px;
   text-transform: none;
-  padding: 0px 0px 0px 50px; /* remove top padding */
+  padding: 15px 0px 0px 50px;
 }
 
 .repo-button{
@@ -285,10 +287,7 @@ img:hover {
   display: inline-block;
   padding-top: 12px;
   padding-left: 50px;
-}
-
-.unique {
-  padding-left: 10px;
+  position: absolute;
 }
 
 h4 {
@@ -296,19 +295,19 @@ h4 {
 }
 
 .example_c {
-    font-family: Wan;
-    letter-spacing: 1px;
-    color: black;
-    line-height: 7px;
-    font-size: 9px;
-    height: 7px;
-    text-transform: none;
-    text-decoration: none;
-    background: #ffffff;
-    padding: 4px;
-    border: 1px solid #000000 !important;
-    display: inline-block;
-    transition: all 0.4s ease 0s;
+  font-family: Wan;
+  letter-spacing: 1px;
+  color: black;
+  line-height: 7px;
+  font-size: 9px;
+  height: 7px;
+  text-transform: none;
+  text-decoration: none;
+  background: #ffffff;
+  padding: 4px;
+  border: 1px solid #000000 !important;
+  display: inline-block;
+  transition: all 0.4s ease 0s;
   }
 
   .example_c:hover {
@@ -317,18 +316,4 @@ h4 {
     border-color: #000000 !important;
     transition: all 0.4s ease 0s;
   }
-
-  .vue:hover {
-    color: #ffffff !important;
-    background: #41B883;
-    border-color: #41B883;
-    transition: all 0.4s ease 0s;
-}
-
-.javascript:hover{
-  color: #000000 !important;
-  background: #FFFF00;
-  border-color: #FFFF00;
-  transition: all 0.4s ease 0s;
-}
 </style>

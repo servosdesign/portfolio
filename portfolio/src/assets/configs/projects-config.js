@@ -21,7 +21,7 @@ const projectContent = [{
       link: 'https://github.com/servosdesign/servos-marketplace',
       imageSrc: '/images/nft-marketplace.png',
       title: 'Servos Marketplace',
-      description: "Servos Marketplace is a Ethereum based NFT marketplace application (dApp) made with React, Solidity, Truffle, and web3.js which allows the user to view and / or purchase ERC721 NFTs from among the marketplace items. User log in with their ether wallet address and have access to purchase Solidty / Truffle generated ERC721 NFT s made on the Rinkeby's development network. Featuring custom artwork designed in house",
+      description: "Servos Marketplace is a Ethereum based NFT marketplace application (dApp) made with React, Solidity, Truffle, and web3.js which allows the user to view and / or purchase ERC721 NFTs from among the marketplace items. User log in with their ether wallet address and have access to purchase Solidty / Truffle generated ERC721 NFT s made on the Rinkeby's development network.",
       tag: 'SOLIDITY, TRUFFLE, WEB3.JS, REACT'
     },
     {
@@ -65,7 +65,7 @@ const projectContent = [{
       link: 'https://github.com/servosdesign/servos-marketplace',
       imageSrc: '/images/nft-marketplace.png',
       title: 'Servos Marketplace',
-      description: "Servos Marketplace - это приложение NFT marketplace на базе Ethereum (DApp), созданное с использованием React, Solidity, Truffle и web3.js который позволяет пользователю просматривать и / или приобретать NFT ERC721 из числа товаров marketplace. Пользователь входит в систему со своим другим адресом кошелька и получает доступ к покупке сгенерированных Solidity / Truffle NFT ERC721, сделанных в сети разработчиков Rinkeby's. С произведениями искусства, созданными на заказ собственными силами",
+      description: "Servos Marketplace - это приложение NFT marketplace на базе Ethereum (DApp), созданное с использованием React, Solidity, Truffle и web3.js который позволяет пользователю просматривать и / или приобретать NFT ERC721 из числа товаров marketplace. Пользователь входит в систему со своим другим адресом кошелька и получает доступ к покупке сгенерированных Solidity / Truffle NFT ERC721, сделанных в сети разработчиков Rinkeby's.",
       tag: 'SOLIDITY, TRUFFLE, WEB3.JS, REACT'
     },
     {

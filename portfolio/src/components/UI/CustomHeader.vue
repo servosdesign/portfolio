@@ -166,8 +166,8 @@ export default {
         }
         setTimeout(() => {
           this.showMenu = true
-        }, 100)
-      }, 100)
+        }, 50)
+      }, 50)
     }
   }
 }
@@ -215,7 +215,7 @@ export default {
   background: #474747;
   border-radius: 15px;
   transform: translate3d(-75%, 0, 0);
-  transition: transform 0.4s cubic-bezier(0.85, 0.05, 0.18, 1.35);
+  transition: transform 0.3s cubic-bezier(0.85, 0.05, 0.18, 1.35);
   box-shadow:
     -8px -4px 8px 0px #ffffff,
     8px 4px 12px 0px #ffffff;

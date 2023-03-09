@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div v-if="textLanguage === 'english'">
     <div
       v-for="(index) in numberOfProjects"
       :key="index"
@@ -10,61 +10,77 @@
       >
         <!--LEFT-->
         <div
-          v-if="project.leftAligned [index] !== undefined"
+          v-if="project.englishContent [index] !== undefined"
           class="list-wrapper"
+          :class="'list-wrapper' + index"
         >
           <div class="repo-img">
             <img
               class="design2"
-              :src="project.leftAligned[index].imageSrc"
+              :src="project.englishContent[index].imageSrc"
               alt=""
               rel="preload"
             >
           </div>
 
           <div class="list-description">
-            <h2>{{ project.leftAligned[index].title }}</h2>
+            <h2>{{ project.englishContent[index].title }}</h2>
             <p>
-              {{ project.leftAligned[index].description }}
+              {{ project.englishContent[index].description }}
             </p>
-            <h3>{{ project.leftAligned[index].tag }}</h3>
+            <h3>{{ project.englishContent[index].tag }}</h3>
             <div class="repo-button">
               <a
                 class="example_c"
-                :href="project.leftAligned[index].link"
+                :href="project.englishContent[index].link"
                 target="_blank"
                 rel="nofollow noopener"
               > <h4>Visit</h4></a>
             </div>
           </div>
         </div>
-        <!--RIGHT-->
+      </div>
+    </div>
+    <ContactContent />
+  </div>
+  <div v-else>
+    <div
+      v-for="(index) in numberOfProjects"
+      :key="index"
+    >
+      <div
+        v-for="project in projects"
+        :key="project.length"
+      >
+        <!--LEFT-->
         <div
-          v-if="project.rightAligned[index] !== undefined"
+          v-if="project.russianContent [index] !== undefined"
           class="list-wrapper"
+          :class="'list-wrapper' + index"
         >
+          <div class="repo-img">
+            <img
+              class="design2"
+              :src="project.russianContent[index].imageSrc"
+              alt=""
+              rel="preload"
+            >
+          </div>
+
           <div class="list-description">
-            <h2>{{ project.rightAligned[index].title }}</h2>
+            <h2>{{ project.russianContent[index].title }}</h2>
             <p>
-              {{ project.rightAligned[index].description }}
+              {{ project.russianContent[index].description }}
             </p>
-            <h3>{{ project.rightAligned[index].tag }}</h3>
+            <h3>{{ project.russianContent[index].tag }}</h3>
             <div class="repo-button">
               <a
                 class="example_c"
-                :href="project.rightAligned[index].link"
+                :href="project.russianContent[index].link"
                 target="_blank"
                 rel="nofollow noopener"
               > <h4>Visit</h4></a>
             </div>
-          </div>
-          <div class="repo-img">
-            <img
-              class="design2"
-              :src="project.rightAligned[index].imageSrc"
-              alt=""
-              rel="preload"
-            >
           </div>
         </div>
       </div>
@@ -80,6 +96,12 @@ import ContactContent from './ContactContent.vue'
 export default {
   components: {
     ContactContent
+  },
+  props: {
+    textLanguage: {
+      type: String,
+      default: 'english'
+    }
   },
   data () {
     return {
@@ -99,24 +121,37 @@ export default {
 </script>
 
 <style scoped>
+.small0, .small0russian{
+  margin-top: 40px;
+}
+
 img:hover {
   cursor: default;
 }
 
 .list-wrapper {
   display: flex;
-  margin: 0 auto;
   justify-content: center;
   align-items: center;
+  margin: 0 auto;
+  height: auto;
+  min-height: 200px;
+  max-height: 250px;
+  margin-bottom: 30px;
 }
 
-.repo-img{
-  width: 562px;
+.list-wrapper0{
+  margin-top: 20px;
+}
+
+.list-wrapper0russian{
+  margin-bottom: 0px;
+
 }
 
 .repo-img img{
   height: 100%;
-  width: 100%;
+  width: 200px;
   padding: 0px 0px 0px 0px;
 }
 
@@ -177,6 +212,7 @@ img:hover {
   display: inline-block;
   padding-top: 12px;
   padding-left: 50px;
+  position: absolute;
 }
 
 h4 {

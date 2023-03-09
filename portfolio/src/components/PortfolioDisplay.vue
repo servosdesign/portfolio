@@ -5,7 +5,7 @@
     </div>
 
     <div v-if="isSecondPage">
-      <DesignsContent />
+      <DesignsContent :text-language="textLanguage" />
     </div>
 
     <div v-if="isThirdPage">

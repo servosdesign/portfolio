@@ -85,7 +85,6 @@
         </div>
       </div>
     </div>
-    <CustomFooter />
   </section>
 </template>
 
@@ -168,17 +167,17 @@ button {
   letter-spacing: 4px;
   color: black;
   line-height: 10px;
-  font-size: 14px;
+  font-size: 12px;
   text-transform: uppercase;
   padding-top: 8px;
 }
 
 .wrapper-pro3 {
+  margin-top: 80px;
   display: flex;
-  flex-direction: column;
   background-color: white;
-  margin-bottom: 20px;
-  margin-top: 100px;
+  justify-content: center;
+  flex-direction: row;
 }
 
 .contact-img {
@@ -190,15 +189,8 @@ button {
   order: 1;
 }
 
-.wrapper-pro3 {
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
-}
-
 .contact-page {
   background-color: white;
-  padding-bottom: 24px;
 }
 
 .contact-page h2 {
@@ -256,15 +248,13 @@ button {
 }
 
 .background {
-  padding-top: 200px;
   order: 2;
+  border-top: 1px solid rgb(228, 228, 228);
 }
 
 .background {
-  padding-top: 40px;
   display: flex;
   height: 100%;
-  padding-bottom: 46px;
 }
 
 .container {
@@ -277,11 +267,11 @@ button {
 
 .screen {
   font-family: Play-Regular;
-  color: #111;
+  color: #444444;
   letter-spacing: 4px;
-  color: black;
   line-height: 10px;
-  font-size: 14px;
+  font-weight: bold;
+  font-size: 12px;
   text-transform: uppercase;
 }
 
@@ -293,19 +283,19 @@ button {
   left: 20px;
   right: 20px;
   bottom: 0;
-  box-shadow: 0 10px 20px rgba(238, 238, 238, 0.4);
   z-index: -1;
 }
 
 .screen-body {
   display: flex;
-  box-shadow: 0 10px 20px rgba(238, 238, 238, 0.4);
   z-index: -1;
 }
 
 .screen-body-item {
   flex: 1;
   padding: 50px;
+  padding-bottom: 0px;
+  padding-top: 35px;
 }
 
 .di{
@@ -359,7 +349,7 @@ button {
 .app-form-control::placeholder {
   color: #666;
   font-family: wan;
-  font-size: 9px;
+  font-size: 8px;
   letter-spacing: 4px;
 }
 
@@ -370,8 +360,9 @@ button {
 .app-form-button {
   background: none;
   border: none;
-  color: #000000;
-  font-size: 14px;
+  color: #444444;
+  font-size: 12px;
+  font-weight: bold;
   cursor: pointer;
   outline: none;
 }

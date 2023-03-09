@@ -48,34 +48,20 @@ export default {
   left: 50%; }
 
 .arrow {
-  width: 15px;
-  height: 15px;
+  width: 7px;
+  height: 7px;
   top: 50%;
   margin: -20px 0 0 -20px;
   -webkit-transform: rotate(-135deg);
   border-left: none;
   border-top: none;
-  border-right: 2px rgb(65, 65, 65) solid;
-  border-bottom: 2px rgb(65, 65, 65) solid;
+  border-right: 1px rgb(0, 0, 0) solid;
+  border-bottom: 1px rgb(0, 0, 0) solid;
 }
 
 .arrow:hover{
   cursor: pointer;
 }
-
-.arrow:before {
-  content: '';
-  width: 10px;
-  height: 10px;
-  top: 50%;
-  margin: -8px 0 0 -8px;
-  border-left: none;
-  border-top: none;
-  border-right: 1px rgb(65, 65, 65) solid;
-  border-bottom: 1px rgb(65, 65, 65) solid;
-  animation-duration: 2s;
-  animation-iteration-count: infinite;
-  animation-name: arrow; }
 
 @keyframes arrow {
   0% {

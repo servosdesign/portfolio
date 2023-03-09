@@ -29,9 +29,7 @@ import PortfolioDisplay from './components/PortfolioDisplay.vue'
 /*
     Todo:
       - Add routing for the pages
-      - re-style contact component, fonts, sizing, images, colors, everything
       - Set up image display transitions when click project images
-      - Make lookbook more centered
       - mobile
 */
 

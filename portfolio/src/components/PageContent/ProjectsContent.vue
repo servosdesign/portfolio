@@ -1,5 +1,8 @@
 <template>
-  <div class="top">
+  <div
+    v-if="textLanguage === 'english'"
+    class="top"
+  >
     <div
       v-for="(index) in numberOfProjects"
       :key="index"
@@ -10,43 +13,46 @@
       >
         <!--LEFT-->
         <div
-          v-if="project.leftAligned[index] !== undefined"
+          v-if="project.englishContent[index] !== undefined"
           class="list-wrapper"
         >
           <div class="repo-img">
             <img
               class="design2"
-              :src="project.leftAligned[index].imageSrc"
+              :src="project.englishContent[index].imageSrc"
               alt=""
               rel="preload"
             >
           </div>
 
-          <div class="list-description">
-            <h2>{{ project.leftAligned[index].title }}</h2>
+          <div
+            class="list-description"
+            :class="'small'+index"
+          >
+            <h2>{{ project.englishContent[index].title }}</h2>
             <p>
-              {{ project.leftAligned[index].description }}
+              {{ project.englishContent[index].description }}
             </p>
 
-            <h3>{{ project.leftAligned[index].tag }}</h3>
+            <h3>{{ project.englishContent[index].tag }}</h3>
             <div
-              v-if="!project.leftAligned[index].uniqueButton"
+              v-if="!project.englishContent[index].uniqueButton"
               class="repo-button"
             >
               <a
                 class="example_c"
-                :href="project.leftAligned[index].link"
+                :href="project.englishContent[index].link"
                 target="_blank"
                 rel="nofollow noopener"
               >
                 <h4>Github</h4>
               </a>
             </div>
-            <div v-if="project.leftAligned[index].uniqueButton">
+            <div v-if="project.englishContent[index].uniqueButton">
               <div class="repo-button">
                 <a
                   class="example_c vue"
-                  :href="project.leftAligned[index].link"
+                  :href="project.englishContent[index].link"
                   target="_blank"
                   rel="nofollow noopener"
                 >
@@ -56,7 +62,7 @@
               <div class="repo-button unique">
                 <a
                   class="example_c javascript"
-                  :href="project.leftAligned[index].uniqueLink"
+                  :href="project.englishContent[index].uniqueLink"
                   target="_blank"
                   rel="nofollow noopener"
                 >
@@ -66,35 +72,84 @@
             </div>
           </div>
         </div>
-        <!--RIGHT
+      </div>
+    </div>
+    <div class="bottom" />
+    <ContactContent />
+  </div>
+  <div
+    v-else
+    class="top"
+  >
+    <div
+      v-for="(index) in numberOfProjects"
+      :key="index"
+    >
+      <div
+        v-for="project in projects"
+        :key="project.length"
+      >
+        <!--LEFT-->
         <div
-          v-if="project.rightAligned[index] !== undefined"
-          class="list-wrapper move"
+          v-if="project.russianContent[index] !== undefined"
+          class="list-wrapper"
         >
-          <div class="list-description">
-            <h2>{{ project.rightAligned[index].title }}</h2>
-            <p>{{ project.rightAligned[index].description }}</p>
-            <h3>{{ project.rightAligned[index].tag }}</h3>
-            <div class="repo-button">
-              <a
-                class="example_c"
-                :href="project.rightAligned[index].link"
-                target="_blank"
-                rel="nofollow noopener"
-              >
-                <h4>GitHub</h4>
-              </a>
-            </div>
-          </div>
           <div class="repo-img">
             <img
               class="design2"
-              :src="project.rightAligned[index].imageSrc"
+              :src="project.russianContent[index].imageSrc"
               alt=""
+              rel="preload"
             >
           </div>
+
+          <div
+            class="list-description"
+            :class="'small'+index"
+          >
+            <h2>{{ project.russianContent[index].title }}</h2>
+            <p>
+              {{ project.russianContent[index].description }}
+            </p>
+
+            <h3>{{ project.russianContent[index].tag }}</h3>
+            <div
+              v-if="!project.russianContent[index].uniqueButton"
+              class="repo-button"
+            >
+              <a
+                class="example_c"
+                :href="project.russianContent[index].link"
+                target="_blank"
+                rel="nofollow noopener"
+              >
+                <h4>Github</h4>
+              </a>
+            </div>
+            <div v-if="project.russianContent[index].uniqueButton">
+              <div class="repo-button">
+                <a
+                  class="example_c vue"
+                  :href="project.russianContent[index].link"
+                  target="_blank"
+                  rel="nofollow noopener"
+                >
+                  <h4>Vue.js</h4>
+                </a>
+              </div>
+              <div class="repo-button unique">
+                <a
+                  class="example_c javascript"
+                  :href="project.russianContent[index].uniqueLink"
+                  target="_blank"
+                  rel="nofollow noopener"
+                >
+                  <h4>JavaScript</h4>
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
-            -->
       </div>
     </div>
     <div class="bottom" />
@@ -110,6 +165,12 @@ import ContactContent from './ContactContent.vue'
 export default {
   components: {
     ContactContent
+  },
+  props: {
+    textLanguage: {
+      type: String,
+      default: 'english'
+    }
   },
   data () {
     return {
@@ -134,23 +195,20 @@ img:hover {
 }
 .list-wrapper {
   display: flex;
-  margin: 0 auto;
-  height: 250px;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
+  margin: 0 auto;
+  height: auto;
+  min-height: 250px;
 }
 
 .top {
-  margin-top: 40px;
-}
-
-.repo-img{
-  width: 200px;
+  margin-top: 62px;
 }
 
 .repo-img img{
   height: 100%;
-  width: 100%;
+  width: 200px;
   padding: 0px 0px 0px 0px;
 }
 
@@ -163,8 +221,10 @@ img:hover {
 }
 
 .list-description{
+  align-items: center;
   width: 562px;
   padding-top: 0;
+  margin-bottom: 63px;
 }
 
 .move {
@@ -182,7 +242,14 @@ img:hover {
   font-size: 9px;
   text-transform: uppercase;
   padding: 0px 0px 0px 50px;
-  margin: 0;
+  margin-top: 0px;
+  margin-bottom: 15px;
+}
+
+.small0{
+  /* for smaller sized descriptions */
+  margin-top: 30px;
+  margin-bottom: 0px;
 }
 
 .list-description h3 {
@@ -210,7 +277,7 @@ img:hover {
   line-height: 20px;
   font-size: 10px;
   text-transform: none;
-  padding: 15px 0px 0px 50px;
+  padding: 0px 0px 0px 50px; /* remove top padding */
 }
 
 .repo-button{

@@ -1,7 +1,7 @@
 <template>
   <div>
     <div v-if="isFirstPage">
-      <ProjectsContent />
+      <ProjectsContent :text-language="textLanguage" />
     </div>
 
     <div v-if="isSecondPage">
@@ -29,6 +29,10 @@ export default {
     pageNumber: {
       type: Number,
       default: 0
+    },
+    textLanguage: {
+      type: String,
+      default: 'english'
     }
   },
   data () {

@@ -1,5 +1,27 @@
 <template>
   <header>
+    <div class="language-toggle">
+      <label class="label">
+        <div
+          class="label-text label-text-left"
+        >🇺🇸</div>
+        <div
+          class="toggle"
+        >
+          <input
+            class="toggle-state"
+            type="checkbox"
+            name="check"
+            value="check"
+            @click="changeTextLanguage()"
+          >
+          <div class="indicator" />
+        </div>
+        <div
+          class="label-text"
+        >🇷🇺</div>
+      </label>
+    </div>
     <div class="container">
       <div
         class="header-brand"
@@ -13,33 +35,80 @@
             alt=""
           >
         </div>
-        <transition
+        <transition-group
+          v-if="languageSelected==='english'"
           name="sliding"
+          tag="ul"
+          class="menu"
+          :class="{ show: showMenu }"
         >
-          <ul
-            class="menu"
-            :class="{ show: showMenu }"
+          <li
+            key="1"
+            :class="{ active: currentLink === 'home' }"
           >
-            <li :class="{ active: currentLink === 'home' }">
-              <a
-                href="/"
-                @click="toggleMenu"
-              >Projects</a>
-            </li>
-            <li :class="{ active: currentLink === 'design' }">
-              <a
-                href="/design"
-                @click="toggleMenu"
-              >Designs</a>
-            </li>
-            <li :class="{ active: currentLink === 'lookbook' }">
-              <a
-                href="/lookbook"
-                @click="toggleMenu"
-              >Lookbook</a>
-            </li>
-          </ul>
-        </transition>
+            <a
+              href="/"
+              @click="toggleMenu"
+            >Projects</a>
+          </li>
+          <li
+            key="1"
+            :class="{ active: currentLink === 'design' }"
+          >
+            <a
+              href="/design"
+              @click="toggleMenu"
+            >Designs</a>
+          </li>
+          <li
+            key="1"
+            :class="{ active: currentLink === 'lookbook' }"
+          >
+            <a
+              href="/lookbook"
+              @click="toggleMenu"
+            >Lookbook</a>
+          </li>
+        </transition-group>
+
+        <transition-group
+          v-else
+          name="sliding"
+          tag="ul"
+          class="menu"
+          :class="{ show: showMenu }"
+        >
+          <li
+            key="1"
+            :class="{ active: currentLink === 'home' }"
+          >
+            <a
+              class="russian-font"
+              href="/"
+              @click="toggleMenu"
+            >Проекты</a>
+          </li>
+          <li
+            key="1"
+            :class="{ active: currentLink === 'design' }"
+          >
+            <a
+              class="russian-font"
+              href="/design"
+              @click="toggleMenu"
+            >дизайны</a>
+          </li>
+          <li
+            key="1"
+            :class="{ active: currentLink === 'lookbook' }"
+          >
+            <a
+              href="/lookbook"
+              class="russian-font"
+              @click="toggleMenu"
+            >лукбук</a>
+          </li>
+        </transition-group>
       </div>
     </div>
   </header>
@@ -50,7 +119,16 @@ export default {
   data () {
     return {
       showMenu: false,
-      currentLink: 'home'
+      currentLink: 'home',
+      languageSelected: 'english'
+    }
+  },
+  computed: {
+    isEnglishSelected () {
+      return this.languageSelected === 'english'
+    },
+    isRussianSelected () {
+      return this.languageSelected === 'russian'
     }
   },
   mounted () {
@@ -62,7 +140,6 @@ export default {
     } else if (currentPath === '/lookbook') {
       this.currentLink = 'lookbook'
     }
-
     setTimeout(() => {
       this.toggleMenu()
     }, 100)
@@ -76,12 +153,78 @@ export default {
       } else {
         menu.classList.remove('show')
       }
+    },
+    changeTextLanguage () {
+      this.showMenu = false
+      setTimeout(() => {
+        if (this.languageSelected === 'english') {
+          this.languageSelected = 'russian'
+          this.$emit('setTextLanguage', 'russian')
+        } else {
+          this.languageSelected = 'english'
+          this.$emit('setTextLanguage', 'english')
+        }
+        setTimeout(() => {
+          this.showMenu = true
+        }, 100)
+      }, 100)
     }
   }
 }
 </script>
 
 <style scoped>
+.language-toggle{
+  position: absolute;
+  right: 10px;
+}
+
+.label-text-left{
+  margin-right: 5px;
+}
+.label {
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.label-text {
+  margin-left: 5px;
+  font-family: Play-Regular;
+  color: black;
+}
+
+.toggle {
+  isolation: isolate;
+  position: relative;
+  height: 7.5px;
+  width: 15px;
+  margin-top: 4px;
+  border-radius: 15px;
+  overflow: hidden;
+  border: 1px solid #e6e6e6;
+}
+
+.toggle-state {
+  display: none;
+}
+
+.indicator {
+  height: 100%;
+  width: 200%;
+  background: #474747;
+  border-radius: 15px;
+  transform: translate3d(-75%, 0, 0);
+  transition: transform 0.4s cubic-bezier(0.85, 0.05, 0.18, 1.35);
+  box-shadow:
+    -8px -4px 8px 0px #ffffff,
+    8px 4px 12px 0px #ffffff;
+}
+
+.toggle-state:checked ~ .indicator {
+  transform: translate3d(25%, 0, 0);
+}
+
 .container {
   background-color: white;
   width: 100%;
@@ -128,8 +271,15 @@ a {
   font-weight: bold;
 }
 
-a:hover {
-  color: #474747;
+.russian-font{
+  font-family: Play-Regular;
+  color: #111;
+  letter-spacing: 4px;
+  color: black;
+  line-height: 10px;
+  font-size: 8.5px;
+  text-transform: uppercase;
+  font-weight: bold;
 }
 
 .show {

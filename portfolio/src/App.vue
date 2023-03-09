@@ -1,6 +1,6 @@
 <template>
   <div>
-    <CustomHeader />
+    <CustomHeader @setTextLanguage="changeTextLanguage" />
     <!--
     <TraverseButtons
       v-if="buttonVisible"
@@ -9,7 +9,10 @@
       :button-name="buttonName"
     />
     -->
-    <PortfolioDisplay :page-number="pageNumber" />
+    <PortfolioDisplay
+      :page-number="pageNumber"
+      :text-language="textLanguage"
+    />
   </div>
 </template>
 
@@ -20,7 +23,9 @@ import PortfolioDisplay from './components/PortfolioDisplay.vue'
 /*
     Todo:
       - Add routing for the pages
-      - Set up image display when click project images
+      - re-style contact component, fonts, sizing, images, colors, everything
+      - Add russian language toggle (design page only now)
+      - Set up image display transitions when click project images
       - Make lookbook more centered
       - mobile
 */
@@ -37,7 +42,8 @@ export default {
       buttonName: {
         next: '',
         previous: ''
-      }
+      },
+      textLanguage: 'english'
     }
   },
   watch: {
@@ -86,6 +92,9 @@ export default {
     },
     scrollFunction () {
       this.buttonVisible = true
+    },
+    changeTextLanguage (language) {
+      this.textLanguage = (language)
     }
   }
 }

@@ -1,5 +1,5 @@
 const projectContent = [{
-  leftAligned: [
+  englishContent: [
     {
       order: 1,
       link: 'https://github.com/servosdesign/horror-ai',
@@ -21,7 +21,7 @@ const projectContent = [{
       link: 'https://github.com/servosdesign/servos-marketplace',
       imageSrc: '/images/nft-marketplace.png',
       title: 'Servos Marketplace',
-      description: "Servos Marketplace is a Ethereum based NFT marketplace application (dApp) made with React, Solidity, Truffle, and web3.js which allows the user to view and / or purchase ERC721 NFTs from among the marketplace items. User log in with their ether wallet address and have access to purchase Solidty / Truffle generated ERC721 NFT s made on the Rinkeby's development network. Featuring custom artwork made by yours truly.",
+      description: "Servos Marketplace is a Ethereum based NFT marketplace application (dApp) made with React, Solidity, Truffle, and web3.js which allows the user to view and / or purchase ERC721 NFTs from among the marketplace items. User log in with their ether wallet address and have access to purchase Solidty / Truffle generated ERC721 NFT s made on the Rinkeby's development network. Featuring custom artwork designed in house",
       tag: 'SOLIDITY, TRUFFLE, WEB3.JS, REACT'
     },
     {
@@ -43,8 +43,49 @@ const projectContent = [{
       tag: 'VUE.JS, JAVASCRIPT, HTML/CSS'
     }
   ],
-  rightAligned: [
-
+  russianContent: [
+    {
+      order: 1,
+      link: 'https://github.com/servosdesign/horror-ai',
+      imageSrc: '/images/horror-ai.png',
+      title: 'Horror.ai',
+      description: 'Horror.ai является Vue.js Приложение на базе искусственного интеллекта, которое создает имитацию событий на тему фильмов ужасов с использованием API OpenAI, серверной части с Express и пользовательских подсказок для каждой конкретной темы ужасов. Пользователь регистрируется с помощью своих собственных ключей Openal API и управляет своей собственной токенизацией.',
+      tag: 'VUE.js, OPENAI, Express'
+    },
+    {
+      order: 2,
+      link: 'https://github.com/servosdesign/rucream',
+      imageSrc: '/images/rucream.png',
+      title: 'ruCream',
+      description: 'ruCream - это минималистичная тема кремового цвета в легком режиме для приложений vscode JavaScript, в значительной степени вдохновленная цветовыми темами Ayu. Базовый шаблон ruCream представляет собой модификацию выбора цвета темы Ayu Light при сохранении ее ключевых концепций. Оформленный в легкой и воздушной тематике, вдохновленный культовой цветовой палитрой десертов "Русский крем", состоящей из красных, сливочных, белых тонов и фирменной стеклянной или белой чаши, которая создает гладкое, минималистичное и даже восхитительное ощущение при написании.',
+      tag: 'THEMES, VSCODE, JAVASCRIPT'
+    },
+    {
+      order: 3,
+      link: 'https://github.com/servosdesign/servos-marketplace',
+      imageSrc: '/images/nft-marketplace.png',
+      title: 'Servos Marketplace',
+      description: "Servos Marketplace - это приложение NFT marketplace на базе Ethereum (DApp), созданное с использованием React, Solidity, Truffle и web3.js который позволяет пользователю просматривать и / или приобретать NFT ERC721 из числа товаров marketplace. Пользователь входит в систему со своим другим адресом кошелька и получает доступ к покупке сгенерированных Solidity / Truffle NFT ERC721, сделанных в сети разработчиков Rinkeby's. С произведениями искусства, созданными на заказ собственными силами",
+      tag: 'SOLIDITY, TRUFFLE, WEB3.JS, REACT'
+    },
+    {
+      order: 4,
+      link: 'https://github.com/servosdesign/minimalistic-questions.vue',
+      imageSrc: '/images/minquestions.png',
+      title: 'Minimalistic Questions',
+      description: 'Минималистичные вопросы - это Vue.js приложение для электронного обучения, которое изменяет существующий банк вопросов путем рандомизации данных вопросов, динамического выбора количества вопросов, позволяет пользователю циклически просматривать вопросы с помощью кнопок "Предыдущий" и "следующий", подсчитывает общий балл для пользователя на основе отправки теста и улучшает пользовательский опыт с помощью минималистичного пользовательский интерфейс.',
+      tag: 'VUE.js, JAVASCRIPT, eLearning',
+      uniqueButton: true,
+      uniqueLink: 'https://github.com/servosdesign/minimalistic-questions.js'
+    },
+    {
+      order: 5,
+      link: 'https://github.com/servosdesign/portfolio',
+      imageSrc: '/images/portfolio.png',
+      title: 'Portfolio',
+      description: 'Портфолио - это специально созданное портфолио, которое периодически обновляется новыми проектами и дизайнами. Портфолио имеет минималистичный внешний вид. Я хотел, чтобы большая часть информации была доступна на одной странице. Дизайн полностью соответствует моим личным вкусам в веб-дизайне. Репозиторий содержит копию оригинального портфолио (HTML/CSS) и копию этого текущего дизайна (Vue.js )',
+      tag: 'VUE.JS, JAVASCRIPT, HTML/CSS'
+    }
   ]
 }]
 

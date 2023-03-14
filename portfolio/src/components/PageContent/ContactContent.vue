@@ -90,11 +90,9 @@
 
 <script>
 import contactContent from '../../assets/configs/contact-config.js'
-import CustomFooter from '../UI/CustomFooter.vue'
 
 export default {
   components: {
-    CustomFooter
   },
   data () {
     return {
@@ -249,7 +247,7 @@ button {
 
 .background {
   order: 2;
-  border-top: 1px solid rgb(228, 228, 228);
+  border-top: 1px solid #e4e4e4;
 }
 
 .background {

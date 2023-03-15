@@ -76,7 +76,7 @@
                     type="submit"
                     name="submit"
                   >
-                    SEND
+                    <h4>SEND</h4>
                   </button>
                 </div>
               </form>
@@ -157,17 +157,6 @@ img {
 
 .github-button {
   margin-top: 20px;
-}
-
-button {
-  font-family: Play-Regular;
-  color: #111;
-  letter-spacing: 4px;
-  color: black;
-  line-height: 10px;
-  font-size: 12px;
-  text-transform: uppercase;
-  padding-top: 8px;
 }
 
 .wrapper-pro3 {
@@ -355,17 +344,30 @@ button {
   border-bottom-color: #ddd;
 }
 
+h4 {
+  margin: 0;
+}
+
 .app-form-button {
-  background: none;
-  border: none;
-  color: #444444;
-  font-size: 12px;
-  font-weight: bold;
+  font-family: Wan;
+  letter-spacing: 1px;
+  color: black;
+  line-height: 7px;
+  font-size: 9px;
+  text-transform: none;
+  text-decoration: none;
   cursor: pointer;
-  outline: none;
+  background: #ffffff;
+  padding: 4px;
+  border: 1px solid #000000 !important;
+  display: inline-block;
+  transition: all 0.4s ease 0s;
 }
 
 .app-form-button:hover {
-  color: #4d4d4d;
+  color: #ffffff !important;
+  background: #000000;
+  border-color: #000000 !important;
+  transition: all 0.4s ease 0s;
 }
 </style>

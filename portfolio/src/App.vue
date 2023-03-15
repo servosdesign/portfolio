@@ -9,12 +9,7 @@
       :button-name="buttonName"
     />
     -->
-    <button @click="increasePageNumber">
-      next
-    </button>
-    <button @click="decreasePageNumber">
-      prev
-    </button>
+
     <PortfolioDisplay
       :page-number="pageNumber"
       :text-language="textLanguage"
@@ -28,6 +23,7 @@ import PortfolioDisplay from './components/PortfolioDisplay.vue'
 
 /*
     Todo:
+      - Fix min question only one button
       - Add routing for the pages
       - Set up image display transitions when click project images
       - mobile

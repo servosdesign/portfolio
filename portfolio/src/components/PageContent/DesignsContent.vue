@@ -16,7 +16,6 @@
         >
           <div class="repo-img">
             <img
-              class="design2"
               :src="project.englishContent[index].imageSrc"
               alt=""
               rel="preload"
@@ -60,7 +59,6 @@
         >
           <div class="repo-img">
             <img
-              class="design2"
               :src="project.russianContent[index].imageSrc"
               alt=""
               rel="preload"
@@ -272,7 +270,7 @@ h4 {
   .repo-img img{
   height: 100%;
   width: 100px;
-  margin-right: 20px;
+  margin-right: 0px;
   padding: 0px 0px 0px 0px;
   }
 }

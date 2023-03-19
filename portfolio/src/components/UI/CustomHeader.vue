@@ -13,6 +13,7 @@
             type="checkbox"
             name="check"
             value="check"
+            :checked="isRussianSelected"
             @click="changeTextLanguage()"
           >
           <div class="indicator" />
@@ -53,10 +54,10 @@
           </li>
           <li
             key="1"
-            :class="{ active: currentLink === 'design' }"
+            :class="{ active: currentLink === 'designs' }"
           >
             <a
-              href="/design"
+              href="/designs"
               @click="toggleMenu"
             >Designs</a>
           </li>
@@ -90,11 +91,11 @@
           </li>
           <li
             key="1"
-            :class="{ active: currentLink === 'design' }"
+            :class="{ active: currentLink === 'designs' }"
           >
             <a
               class="russian-font"
-              href="/design"
+              href="/designs"
               @click="toggleMenu"
             >дизайны</a>
           </li>
@@ -120,7 +121,7 @@ export default {
     return {
       showMenu: false,
       currentLink: 'home',
-      languageSelected: 'english'
+      languageSelected: localStorage.getItem('languageSelected') || 'english'
     }
   },
   computed: {
@@ -135,8 +136,8 @@ export default {
     const currentPath = window.location.pathname
     if (currentPath === '/') {
       this.currentLink = 'home'
-    } else if (currentPath === '/design') {
-      this.currentLink = 'design'
+    } else if (currentPath === '/designs') {
+      this.currentLink = 'designs'
     } else if (currentPath === '/lookbook') {
       this.currentLink = 'lookbook'
     }
@@ -159,9 +160,11 @@ export default {
       setTimeout(() => {
         if (this.languageSelected === 'english') {
           this.languageSelected = 'russian'
+          localStorage.setItem('languageSelected', 'russian')
           this.$emit('setTextLanguage', 'russian')
         } else {
           this.languageSelected = 'english'
+          localStorage.setItem('languageSelected', 'english')
           this.$emit('setTextLanguage', 'english')
         }
         setTimeout(() => {
@@ -171,6 +174,7 @@ export default {
     }
   }
 }
+
 </script>
 
 <style scoped>
@@ -240,9 +244,25 @@ export default {
   padding: 20px 0px;
 }
 
+@media (max-width: 767px) {
+  .header-brand {
+    width: 30px;
+    height: 30px;
+    margin-right: 280px;
+    padding: 20px 0px;
+  }
+}
+
 .img-icon {
   width: 30px;
   height: 30px;
+}
+
+@media (max-width: 767px) {
+.img-icon {
+    width: 25px;
+    height: 25px;
+  }
 }
 
 ul.menu {

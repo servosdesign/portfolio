@@ -252,6 +252,16 @@ img {
   height: 230px;
 }
 
+@media (max-width: 767px) {
+  .container {
+  flex: 0 1 700px;
+  margin: auto;
+  padding: 0px;
+  background-color: white;
+  height: 230px;
+}
+}
+
 .screen {
   font-family: Play-Regular;
   color: #444444;
@@ -285,6 +295,15 @@ img {
   padding-top: 35px;
 }
 
+@media (max-width: 767px) {
+  .screen-body-item {
+    display: flex;
+    flex-direction: column;
+    padding-right: 0px;
+    padding-left: 20px;
+  }
+}
+
 .di{
   padding-top: 15px;
 }
@@ -292,6 +311,15 @@ img {
 .screen-body-item.left {
   display: flex;
   flex-direction: column;
+}
+
+@media (max-width: 767px) {
+  .screen-body-item.left {
+    display: flex;
+    flex-direction: column;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
 }
 
 .img-gh{
@@ -309,6 +337,15 @@ img {
   font-weight: 700;
   font-size: 7px;
   color: #888;
+}
+
+@media (max-width: 767px) {
+  .app-contact {
+  margin-top: 15px;
+  font-weight: 700;
+  font-size: 7px;
+  color: #888;
+}
 }
 
 .app-form-group {
@@ -331,6 +368,20 @@ img {
   font-family: Play-Regular;
   outline: none;
   transition: border-color .2s;
+}
+
+@media (max-width: 767px) {
+    .app-form-control {
+    width: 100%;
+    background: none;
+    border: none;
+    border-bottom: 1px solid #666;
+    color: rgb(0, 0, 0);
+    font-size: 14px;
+    font-family: Play-Regular;
+    outline: none;
+    transition: border-color .2s;
+  }
 }
 
 .app-form-control::placeholder {
@@ -370,4 +421,5 @@ h4 {
   border-color: #000000 !important;
   transition: all 0.4s ease 0s;
 }
+
 </style>

@@ -1,38 +1,22 @@
 <template>
   <div>
     <CustomHeader @setTextLanguage="changeTextLanguage" />
-    <!--
-    <TraverseButtons
-      v-if="buttonVisible"
-      :increase-page-number="increasePageNumber"
-      :decrease-page-number="decreasePageNumber"
-      :button-name="buttonName"
-    />
-    -->
-
-    <PortfolioDisplay
-      :page-number="pageNumber"
-      :text-language="textLanguage"
-    />
+    <router-view :text-language="textLanguage" />
   </div>
 </template>
 
 <script>
 import CustomHeader from './components/UI/CustomHeader.vue'
-import PortfolioDisplay from './components/PortfolioDisplay.vue'
 
 /*
     Todo:
-      - Fix min question only one button
-      - Add routing for the pages
       - Set up image display transitions when click project images
       - mobile
 */
 
 export default {
   components: {
-    CustomHeader,
-    PortfolioDisplay
+    CustomHeader
   },
   data () {
     return {
@@ -42,7 +26,7 @@ export default {
         next: '',
         previous: ''
       },
-      textLanguage: 'english'
+      textLanguage: localStorage.getItem('textLanguage') || ''
     }
   },
   watch: {
@@ -93,7 +77,8 @@ export default {
       this.buttonVisible = true
     },
     changeTextLanguage (language) {
-      this.textLanguage = (language)
+      this.textLanguage = language
+      localStorage.setItem('textLanguage', language)
     }
   }
 }

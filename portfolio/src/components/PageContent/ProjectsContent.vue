@@ -63,8 +63,6 @@
                 >
                   <h4>Vue.js</h4>
                 </a>
-              </div>
-              <div class="repo-button unique">
                 <a
                   class="example_c javascript"
                   :href="project.englishContent[index].uniqueLink"
@@ -142,8 +140,6 @@
                 >
                   <h4>Vue.js</h4>
                 </a>
-              </div>
-              <div class="repo-button unique">
                 <a
                   class="example_c javascript"
                   :href="project.russianContent[index].uniqueLink"
@@ -215,19 +211,52 @@ img:hover {
   margin-bottom: 30px;
 }
 
+@media (max-width: 767px) {
+    .list-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    height: auto;
+    min-height: 300px;
+    max-height: 300px;
+    margin: 5px;
+    margin-bottom: 30px;
+  }
+}
+
 .list-wrapper0{
   margin-bottom: 0px;
 }
 
+@media (max-width: 767px) {
+    .list-wrapper0{
+      margin-bottom: 50px;
+  }
+}
+
 .list-wrapper0russian{
   margin-bottom: 0px;
+}
 
+@media (max-width: 767px) {
+    .list-wrapper0russian{
+      margin-bottom: 50px;
+  }
 }
 
 .repo-img img{
   height: 100%;
   width: 200px;
   padding: 0px 0px 0px 0px;
+}
+
+@media (max-width: 767px) {
+  .repo-img img{
+  height: 100%;
+  width: 100px;
+  padding: 0px 0px 0px 0px;
+  }
 }
 
 .repo-img:hover{
@@ -238,6 +267,15 @@ img:hover {
   width: 562px;
   height: 562px;
   padding-top: 0;
+}
+
+@media (max-width: 767px) {
+  .list-description{
+  width: 100%;
+  padding-top: 0;
+  margin: 0;
+  height: auto;
+  }
 }
 
 .list-description h2 {
@@ -252,6 +290,23 @@ img:hover {
   text-transform: uppercase;
   padding: 200px 0px 0px 50px;
   margin: 0;
+}
+
+@media (max-width: 767px) {
+  .list-description h2 {
+  text-align: left;
+  width: 100%;
+  font-family: Wan;
+  height: 10px;
+  letter-spacing: 4px;
+  color: black;
+  line-height: 10px;
+  padding-top: 0px;
+  padding-left: 0px;
+  font-size: 9px;
+  text-transform: uppercase;
+  margin: 0;
+  }
 }
 
 .list-description h3 {
@@ -269,6 +324,12 @@ img:hover {
   padding: 10px 0px 0px 50px;
 }
 
+@media (max-width: 767px) {
+    .list-description h3 {
+    padding-left: 0px;
+  }
+}
+
 .list-description p {
   text-align: left;
   margin: 0;
@@ -282,12 +343,33 @@ img:hover {
   padding: 15px 0px 0px 50px;
 }
 
+@media (max-width: 767px) {
+  .list-description p {
+    text-align: left;
+    margin: 0;
+    width: 100%;
+    font-family: Play-Regular;
+    letter-spacing: 0px;
+    color: black;
+    line-height: 20px;
+    font-size: 10px;
+    text-transform: none;
+    padding: 15px 0px 0px 0px;
+  }
+}
+
 .repo-button{
   position: left;
   display: inline-block;
   padding-top: 12px;
   padding-left: 50px;
   position: absolute;
+}
+
+@media (max-width: 767px) {
+  .repo-button {
+    padding-left: 0px;
+  }
 }
 
 h4 {
@@ -310,10 +392,27 @@ h4 {
   transition: all 0.4s ease 0s;
   }
 
-  .example_c:hover {
-    color: #ffffff !important;
-    background: #000000;
-    border-color: #000000 !important;
-    transition: all 0.4s ease 0s;
-  }
+.example_c:hover {
+  color: #ffffff !important;
+  background: #000000;
+  border-color: #000000 !important;
+  transition: all 0.4s ease 0s;
+}
+
+.javascript {
+  margin-left: 5px;
+}
+
+.vue:hover {
+  color: #ffffff !important;
+  background: #41B883;
+  border-color: #41B883;
+  transition: all 0.4s ease 0s;
+}
+.javascript:hover{
+  color: #000000 !important;
+  background: #FFFF00;
+  border-color: #FFFF00;
+  transition: all 0.4s ease 0s;
+}
 </style>

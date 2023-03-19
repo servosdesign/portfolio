@@ -241,4 +241,93 @@ h4 {
     border-color: #000000 !important;
     transition: all 0.4s ease 0s;
   }
+
+  @media (max-width: 767px) {
+    .list-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    height: auto;
+    margin: 5px;
+    min-height: 300px;
+    max-height: 300px;
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 767px) {
+    .list-wrapper0{
+      margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 767px) {
+    .list-wrapper0russian{
+      margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 767px) {
+  .repo-img img{
+  height: 100%;
+  width: 100px;
+  margin-right: 20px;
+  padding: 0px 0px 0px 0px;
+  }
+}
+
+@media (max-width: 767px) {
+  .list-description{
+  width: 100%;
+  padding-top: 0;
+  margin: 0;
+  height: auto;
+  }
+}
+
+@media (max-width: 767px) {
+  .list-description h2 {
+  text-align: left;
+  width: 100%;
+  font-family: Wan;
+  height: 10px;
+  letter-spacing: 4px;
+  color: black;
+  line-height: 10px;
+  padding-top: 0px;
+  padding-left: 0px;
+  font-size: 9px;
+  text-transform: uppercase;
+  margin: 0;
+  }
+}
+
+@media (max-width: 767px) {
+    .list-description h3 {
+    padding-left: 0px;
+  }
+}
+
+@media (max-width: 767px) {
+  .list-description p {
+    text-align: left;
+    margin: 0;
+    width: 100%;
+    font-family: Play-Regular;
+    letter-spacing: 0px;
+    color: black;
+    line-height: 20px;
+    font-size: 10px;
+    text-transform: none;
+    padding: 15px 0px 0px 0px;
+  }
+}
+
+@media (max-width: 767px) {
+  .repo-button {
+    padding-left: 0px;
+  }
+}
+
 </style>

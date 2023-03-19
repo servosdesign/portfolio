@@ -11,7 +11,6 @@ import CustomHeader from './components/UI/CustomHeader.vue'
 /*
     Todo:
       - Set up image display transitions when click project images
-      - mobile
 */
 
 export default {

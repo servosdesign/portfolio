@@ -183,6 +183,13 @@ export default {
   right: 10px;
 }
 
+@media (max-width: 767px) {
+  .language-toggle{
+    position: absolute;
+    right: 15px;
+  }
+}
+
 .label-text-left{
   margin-right: 5px;
 }
@@ -190,6 +197,13 @@ export default {
   display: inline-flex;
   align-items: center;
   cursor: pointer;
+}
+
+@media (max-width: 767px) {
+  .label {
+      position: absolute;
+      right: 5px;
+  }
 }
 
 .label-text {
@@ -237,6 +251,17 @@ export default {
   justify-content: center;
 }
 
+@media (max-width: 767px) {
+  .container {
+    background-color: white;
+    width: 90%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+  }
+}
+
 .header-brand {
   width: 30px;
   height: 30px;
@@ -260,8 +285,7 @@ export default {
 
 @media (max-width: 767px) {
 .img-icon {
-    width: 25px;
-    height: 25px;
+    margin-top: 25px;
   }
 }
 
@@ -272,6 +296,14 @@ ul.menu {
   top: 20px;
   margin-left: 50px;
   width: fit-content;
+}
+
+@media (max-width: 767px) {
+  ul.menu {
+    margin-top: 40px;
+    margin-left: 50px;
+    width: 100%;
+  }
 }
 
 li {

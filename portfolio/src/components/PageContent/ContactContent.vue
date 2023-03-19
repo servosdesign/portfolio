@@ -180,6 +180,14 @@ img {
   background-color: white;
 }
 
+@media (max-width: 767px) {
+  .contact-page {
+    background-color: white;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+
 .contact-page h2 {
   font-family: Wan;
   height: 30%;

@@ -95,6 +95,13 @@ export default {
   font-family: Play-Regular
 }
 
+html, body {
+  overflow-x: hidden;
+}
+body {
+  position: relative
+}
+
 nav ul {
   list-style: none;
 }

@@ -86,13 +86,21 @@ export default {
 <style>
 
 @font-face {
-  src: url(./assets/fonts/wan.ttf);
+  src: url(/src/assets/fonts/wan.woff2) format('woff2'),
+  url('/src/assets/fonts/wan.ttf') format('ttf');
   font-family: Wan;
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-  src: url(./assets/fonts/Play-Regular.ttf);
-  font-family: Play-Regular
+  src: url(/src/assets/fonts/Play-Regular.woff2) format('woff2'),
+  url('/src/assets/fonts/Play-Regular.ttf') format('ttf');
+  font-family: Play-Regular;
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 
 html, body {
@@ -119,11 +127,12 @@ body {
 }
 
 html {
-  background-image: url('/images/codecrecordings.png'),
+  background-image:
+    url('/images/codecrecordings.png'),
     url('/images/methuselahrecords.png'),
     url('/images/servos.png'),
-    url('/images/civlogo.png'),
-    url('/images/civme.png');
+    url('/images/ladder.png'),
+    url('/images/civlogo.png');
     background-size: 0;
 }
 </style>

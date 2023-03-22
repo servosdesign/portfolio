@@ -11,8 +11,17 @@ const router = createRouter({
   routes: [
     { path: '/', component: ProjectsContent },
     { path: '/designs', component: DesignsContent },
-    { path: '/lookbook', component: LookbookContent }
+    { path: '/lookbook', component: LookbookContent },
+    { path: '/:pathMatch(.*)*', redirect: '/' }
   ]
+})
+
+router.beforeEach((to, from, next) => {
+  if (to.path !== '/' && to.path !== '/designs' && to.path !== '/lookbook') {
+    next('/') // redirect to '/' if the user tries to navigate to any other path
+  } else {
+    next()
+  }
 })
 
 createApp(App)

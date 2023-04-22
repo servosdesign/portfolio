@@ -10,6 +10,7 @@ import CustomHeader from './components/UI/CustomHeader.vue'
 
 /*
     Todo:
+      - Add right side margin in mobile view to center the pages content
       - Set up image display transitions when click project images
 */
 

@@ -10,6 +10,7 @@ import CustomHeader from './components/UI/CustomHeader.vue'
 
 /*
     Todo:
+      - fix mobile first load no images showing
       - Add right side margin in mobile view to center the pages content
       - Set up image display transitions when click project images
 */
@@ -87,8 +88,7 @@ export default {
 <style>
 
 @font-face {
-  src: url(/src/assets/fonts/wan.woff2) format('woff2'),
-  url('/src/assets/fonts/wan.ttf') format('ttf');
+  src: url(/src/assets/fonts/wan.woff2) format('woff2');
   font-family: Wan;
   font-weight: normal;
   font-style: normal;
@@ -96,8 +96,7 @@ export default {
 }
 
 @font-face {
-  src: url(/src/assets/fonts/Play-Regular.woff2) format('woff2'),
-  url('/src/assets/fonts/Play-Regular.ttf') format('ttf');
+  src: url(/src/assets/fonts/Play-Regular.woff2) format('woff2');
   font-family: Play-Regular;
   font-weight: normal;
   font-style: normal;

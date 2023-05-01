@@ -10,7 +10,6 @@ import CustomHeader from './components/UI/CustomHeader.vue'
 
 /*
     Todo:
-      - fix mobile first load no images showing
       - Add right side margin in mobile view to center the pages content
       - Set up image display transitions when click project images
 */
@@ -27,7 +26,7 @@ export default {
         next: '',
         previous: ''
       },
-      textLanguage: localStorage.getItem('textLanguage') || ''
+      textLanguage: localStorage.getItem('textLanguage') || 'english'
     }
   },
   watch: {

@@ -14,11 +14,22 @@
           class="list-wrapper"
           :class="'list-wrapper' + index"
         >
-          <div class="repo-img">
+          <div
+            class="repo-img"
+          >
+            <div
+              v-if="!isLoaded"
+              class="image-placeholder"
+              :style="{
+                height: `${project.englishContent[index].height}px`,
+                width: `${project.englishContent[index].width}px`
+              }"
+            />
             <img
+              v-if="isLoaded"
+              class="design2"
               :src="project.englishContent[index].imageSrc"
               alt=""
-              rel="preload"
             >
           </div>
 
@@ -57,11 +68,22 @@
           class="list-wrapper"
           :class="'list-wrapper' + index"
         >
-          <div class="repo-img">
+          <div
+            class="repo-img"
+          >
+            <div
+              v-if="!isLoaded"
+              class="image-placeholder"
+              :style="{
+                height: `${project.russianContent[index].height}+px`,
+                width: `${project.russianContent[index].width}px`
+              }"
+            />
             <img
+              v-if="isLoaded"
+              class="design2"
               :src="project.russianContent[index].imageSrc"
               alt=""
-              rel="preload"
             >
           </div>
 
@@ -104,15 +126,38 @@ export default {
   data () {
     return {
       projects: designContent,
-      numberOfProjects: [0, 1, 2]
+      numberOfProjects: [0, 1, 2],
+      isLoaded: false
     }
   },
   mounted () {
     this.scrollToTop()
+    this.preloadImages(this.projects[0].englishContent)
+    this.preloadImages(this.projects[0].russianContent)
   },
   methods: {
     scrollToTop () {
       window.scrollTo({ top: 0, left: 0, behavior: 'instant' })
+    },
+    preloadImages (type) {
+      const images = type.map((content) => content.imageSrc)
+      const promises = []
+
+      images.forEach((src) => {
+        const promise = new Promise((resolve, reject) => {
+          const image = new Image()
+          image.onload = resolve
+          image.onerror = reject
+          image.src = src
+        })
+        promises.push(promise)
+      })
+
+      Promise.all(promises).then(() => {
+        this.isLoaded = true
+      }).catch((error) => {
+        console.error(error)
+      })
     }
   }
 }
@@ -148,6 +193,12 @@ img:hover {
 }
 
 .repo-img img{
+  height: 100%;
+  width: 200px;
+  padding: 0px 0px 0px 0px;
+}
+
+.repo-img div {
   height: 100%;
   width: 200px;
   padding: 0px 0px 0px 0px;
@@ -273,6 +324,13 @@ h4 {
   margin-right: 0px;
   padding: 0px 0px 0px 0px;
   }
+
+  .repo-img div {
+    height: 100%;
+  width: 100px;
+  margin-right: 0px;
+  padding: 0px 0px 0px 0px;
+}
 }
 
 @media (max-width: 767px) {

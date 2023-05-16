@@ -435,6 +435,8 @@ img:hover {
   padding-top: 12px;
   padding-left: 50px;
   position: absolute;
+  z-index: 9999;
+  pointer-events: all;
 }
 
 @media (max-width: 767px) {

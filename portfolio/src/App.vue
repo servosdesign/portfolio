@@ -10,6 +10,7 @@ import CustomHeader from './components/UI/CustomHeader.vue'
 
 /*
     Todo:
+      - get mobile top margin for first item matched for rus and eng
       - add plus and minus symbol font changer
       - Set up image display transitions when click project images
 */

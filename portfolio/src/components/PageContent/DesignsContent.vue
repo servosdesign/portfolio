@@ -212,6 +212,7 @@ img:hover {
   width: 562px;
   height: 562px;
   padding-top: 0;
+  pointer-events: none;
 }
 
 .list-description h2 {
@@ -262,6 +263,8 @@ img:hover {
   padding-top: 12px;
   padding-left: 50px;
   position: absolute;
+  z-index: 9999;
+  pointer-events: all;
 }
 
 h4 {

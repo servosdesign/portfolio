@@ -66,7 +66,7 @@
         <div
           v-if="project.russianContent [index] !== undefined"
           class="list-wrapper"
-          :class="'list-wrapper' + index"
+          :class="'list-wrapper' + index + 'russian'"
         >
           <div
             class="repo-img"
@@ -293,15 +293,23 @@ h4 {
 
   @media (max-width: 767px) {
     .list-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-    height: auto;
-    margin: 5px;
-    min-height: 300px;
-    max-height: 300px;
-    margin-bottom: 30px;
+      position: relative;
+      left: -15px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto;
+      height: auto;
+      min-height: 300px;
+      max-height: 800px;
+      margin: 5px;
+      margin-bottom: 50px;
+      margin-right: 20px;
+      margin-left: 0px;
+  }
+
+  .list-wrapper0 {
+    margin-top: 30px;
   }
 }
 
@@ -309,12 +317,21 @@ h4 {
     .list-wrapper0{
       margin-bottom: 50px;
   }
+  .list-wrapper0russian {
+    margin-bottom: 100px;
+    margin-top: 30px;
+  }
+  .list-wrapper1russian {
+    margin-bottom: 100px;
+  }
+  .list-wrapper2russian {
+    margin-bottom: 100px;
+  }
+
 }
 
 @media (max-width: 767px) {
-    .list-wrapper0russian{
-      margin-bottom: 50px;
-  }
+
 }
 
 @media (max-width: 767px) {

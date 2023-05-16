@@ -285,7 +285,7 @@ export default {
 
 @media (max-width: 767px) {
 .img-icon {
-    margin-top: 25px;
+    margin-top: 12px;
   }
 }
 
@@ -293,7 +293,7 @@ ul.menu {
   padding: 0;
   display: block;
   position: absolute;
-  top: 20px;
+  top: 10px;
   margin-left: 50px;
   width: fit-content;
 }

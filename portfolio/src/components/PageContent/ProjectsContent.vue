@@ -253,20 +253,38 @@ img:hover {
 
 @media (max-width: 767px) {
     .list-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-    height: auto;
-    min-height: 300px;
-    max-height: 300px;
-    margin: 5px;
-    margin-bottom: 30px;
+      position: relative;
+      left: -15px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto;
+      height: auto;
+      min-height: 300px;
+      max-height: 800px;
+      margin: 5px;
+      margin-bottom: 50px;
+      margin-right: 20px;
+      margin-left: 0px;
   }
+
+  .list-wrapper0russian {
+    margin-bottom: 0px;
+  }
+  .list-wrapper1russian {
+    margin-bottom: 100px;
+  }
+  .list-wrapper2russian {
+    margin-bottom: 100px;
+  }
+  .list-wrapper3russian {
+    margin-bottom: 100px;
+  }
+
 }
 
 .list-wrapper0{
-  margin-bottom: 0px;
+  margin-bottom: 10px;
 }
 
 @media (max-width: 767px) {
@@ -276,12 +294,12 @@ img:hover {
 }
 
 .list-wrapper0russian{
-  margin-bottom: 0px;
+  margin-bottom: 25px;
 }
 
 @media (max-width: 767px) {
     .list-wrapper0russian{
-      margin-bottom: 50px;
+      margin-bottom: 100px;
   }
 }
 
@@ -319,6 +337,7 @@ img:hover {
   width: 562px;
   height: 562px;
   padding-top: 0;
+  pointer-events: none;
 }
 
 @media (max-width: 767px) {

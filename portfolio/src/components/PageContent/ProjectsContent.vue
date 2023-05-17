@@ -299,6 +299,7 @@ img:hover {
 
 @media (max-width: 767px) {
     .list-wrapper0russian{
+      margin-top: 40px;
       margin-bottom: 100px;
   }
 }

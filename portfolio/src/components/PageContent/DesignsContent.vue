@@ -181,15 +181,61 @@ img:hover {
   min-height: 200px;
   max-height: 250px;
   margin-bottom: 30px;
-}
-
-.list-wrapper0{
   margin-top: 20px;
 }
 
-.list-wrapper0russian{
-  margin-bottom: 0px;
+@media (max-width: 767px) {
+    .list-wrapper {
+      position: relative;
+      left: -15px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto;
+      height: auto;
+      min-height: 300px;
+      max-height: 800px;
+      margin: 5px;
+      margin-bottom: 50px;
+      margin-right: 20px;
+      margin-left: 0px;
+  }
 
+  .list-wrapper0russian {
+    margin-bottom: 0px;
+  }
+  .list-wrapper1russian {
+    margin-bottom: 100px;
+  }
+  .list-wrapper2russian {
+    margin-bottom: 100px;
+  }
+  .list-wrapper3russian {
+    margin-bottom: 100px;
+  }
+
+}
+
+.list-wrapper0{
+  margin-bottom: 10px;
+}
+
+@media (max-width: 767px) {
+    .list-wrapper0{
+      margin-top: 40px;
+      margin-bottom: 50px;
+  }
+}
+
+.list-wrapper0russian{
+  margin-bottom: 25px;
+}
+
+@media (max-width: 767px) {
+    .list-wrapper0russian{
+      margin-top: 60px;
+      margin-bottom: 100px;
+  }
 }
 
 .repo-img img{
@@ -204,6 +250,20 @@ img:hover {
   padding: 0px 0px 0px 0px;
 }
 
+@media (max-width: 767px) {
+  .repo-img img{
+  height: 100%;
+  width: 100px;
+  padding: 0px 0px 0px 0px;
+  }
+
+  .repo-img div {
+    height: 100%;
+  width: 100px;
+  padding: 0px 0px 0px 0px;
+  }
+}
+
 .repo-img:hover{
   transition: .5s ease;
 }
@@ -213,6 +273,15 @@ img:hover {
   height: 562px;
   padding-top: 0;
   pointer-events: none;
+}
+
+@media (max-width: 767px) {
+  .list-description{
+  width: 100%;
+  padding-top: 0;
+  margin: 0;
+  height: auto;
+  }
 }
 
 .list-description h2 {
@@ -227,6 +296,23 @@ img:hover {
   text-transform: uppercase;
   padding: 200px 0px 0px 50px;
   margin: 0;
+}
+
+@media (max-width: 767px) {
+  .list-description h2 {
+  text-align: left;
+  width: 100%;
+  font-family: Wan;
+  height: 10px;
+  letter-spacing: 4px;
+  color: black;
+  line-height: 10px;
+  padding-top: 0px;
+  padding-left: 0px;
+  font-size: 9px;
+  text-transform: uppercase;
+  margin: 0;
+  }
 }
 
 .list-description h3 {
@@ -244,6 +330,12 @@ img:hover {
   padding: 10px 0px 0px 50px;
 }
 
+@media (max-width: 767px) {
+    .list-description h3 {
+    padding-left: 0px;
+  }
+}
+
 .list-description p {
   text-align: left;
   margin: 0;
@@ -257,6 +349,21 @@ img:hover {
   padding: 15px 0px 0px 50px;
 }
 
+@media (max-width: 767px) {
+  .list-description p {
+    text-align: left;
+    margin: 0;
+    width: 100%;
+    font-family: Play-Regular;
+    letter-spacing: 0px;
+    color: black;
+    line-height: 20px;
+    font-size: 10px;
+    text-transform: none;
+    padding: 15px 0px 0px 0px;
+  }
+}
+
 .repo-button{
   position: left;
   display: inline-block;
@@ -265,6 +372,12 @@ img:hover {
   position: absolute;
   z-index: 9999;
   pointer-events: all;
+}
+
+@media (max-width: 767px) {
+  .repo-button {
+    padding-left: 0px;
+  }
 }
 
 h4 {
@@ -287,123 +400,10 @@ h4 {
   transition: all 0.4s ease 0s;
   }
 
-  .example_c:hover {
-    color: #ffffff !important;
-    background: #000000;
-    border-color: #000000 !important;
-    transition: all 0.4s ease 0s;
-  }
-
-  @media (max-width: 767px) {
-    .list-wrapper {
-      position: relative;
-      left: -15px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin: 0 auto;
-      height: auto;
-      min-height: 300px;
-      max-height: 800px;
-      margin: 5px;
-      margin-bottom: 50px;
-      margin-right: 20px;
-      margin-left: 0px;
-  }
-
-  .list-wrapper0 {
-    margin-top: 30px;
-  }
+.example_c:hover {
+  color: #ffffff !important;
+  background: #000000;
+  border-color: #000000 !important;
+  transition: all 0.4s ease 0s;
 }
-
-@media (max-width: 767px) {
-    .list-wrapper0{
-      margin-bottom: 50px;
-  }
-  .list-wrapper0russian {
-    margin-bottom: 100px;
-    margin-top: 30px;
-  }
-  .list-wrapper1russian {
-    margin-bottom: 100px;
-  }
-  .list-wrapper2russian {
-    margin-bottom: 100px;
-  }
-
-}
-
-@media (max-width: 767px) {
-
-}
-
-@media (max-width: 767px) {
-  .repo-img img{
-  height: 100%;
-  width: 100px;
-  margin-right: 0px;
-  padding: 0px 0px 0px 0px;
-  }
-
-  .repo-img div {
-    height: 100%;
-  width: 100px;
-  margin-right: 0px;
-  padding: 0px 0px 0px 0px;
-}
-}
-
-@media (max-width: 767px) {
-  .list-description{
-  width: 100%;
-  padding-top: 0;
-  margin: 0;
-  height: auto;
-  }
-}
-
-@media (max-width: 767px) {
-  .list-description h2 {
-  text-align: left;
-  width: 100%;
-  font-family: Wan;
-  height: 10px;
-  letter-spacing: 4px;
-  color: black;
-  line-height: 10px;
-  padding-top: 0px;
-  padding-left: 0px;
-  font-size: 9px;
-  text-transform: uppercase;
-  margin: 0;
-  }
-}
-
-@media (max-width: 767px) {
-    .list-description h3 {
-    padding-left: 0px;
-  }
-}
-
-@media (max-width: 767px) {
-  .list-description p {
-    text-align: left;
-    margin: 0;
-    width: 100%;
-    font-family: Play-Regular;
-    letter-spacing: 0px;
-    color: black;
-    line-height: 20px;
-    font-size: 10px;
-    text-transform: none;
-    padding: 15px 0px 0px 0px;
-  }
-}
-
-@media (max-width: 767px) {
-  .repo-button {
-    padding-left: 0px;
-  }
-}
-
 </style>

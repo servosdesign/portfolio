@@ -1,5 +1,15 @@
 <template>
   <div>
+    <!--
+    <div id="zoom-buttons">
+      <button id="zoom-in">
+        +
+      </button>
+      <button id="zoom-out">
+        -
+      </button>
+    </div>
+    -->
     <CustomHeader @setTextLanguage="changeTextLanguage" />
     <router-view :text-language="textLanguage" />
   </div>
@@ -10,8 +20,6 @@ import CustomHeader from './components/UI/CustomHeader.vue'
 
 /*
     Todo:
-      - get mobile top margin for first item matched for rus and eng
-      - add plus and minus symbol font changer
       - Set up image display transitions when click project images
 */
 
@@ -54,6 +62,7 @@ export default {
   },
   mounted () {
     window.addEventListener('scroll', this.scrollFunction)
+    // this.togglePageZoomDisplay()
   },
   methods: {
     increasePageNumber () {
@@ -80,12 +89,63 @@ export default {
     changeTextLanguage (language) {
       this.textLanguage = language
       localStorage.setItem('textLanguage', language)
+    },
+    togglePageZoomDisplay () {
+      document.getElementById('zoom-in').addEventListener('click', function () {
+        changeZoom(0.1)
+      })
+
+      document.getElementById('zoom-out').addEventListener('click', function () {
+        changeZoom(-0.1)
+      })
+
+      function changeZoom (delta) {
+        const currentZoom = document.documentElement.style.zoom || 1
+        const newZoom = parseFloat(currentZoom) + delta
+
+        // Limit the zoom level between 0.5 and 2
+        if (newZoom >= 0.5 && newZoom <= 2) {
+          document.documentElement.style.zoom = newZoom
+        }
+      }
     }
   }
 }
 </script>
 
 <style>
+#zoom-buttons {
+  position: fixed;
+  top: 30px;
+  right: 25px;
+}
+
+#zoom-buttons button {
+  background-color: transparent;
+  border: none;
+  border: 1px solid black;
+  padding: 5px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+#zoom-buttons button:hover{
+  background-color:#e6e6e6;
+  cursor: pointer;
+}
+
+#zoom-in {
+  font-size: 20px;
+  font-family: Play-Regular;
+  color: black;
+}
+
+#zoom-out {
+  font-size: 20px;
+  font-family: Play-Regular;
+  color: black;
+  margin-left: 3px;
+}
 
 @font-face {
   src: url(/src/assets/fonts/wan.woff2) format('woff2');

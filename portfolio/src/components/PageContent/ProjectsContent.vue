@@ -233,7 +233,7 @@ export default {
 
 <style scoped>
 .small0, .small0russian{
-  margin-top: 40px;
+  margin-top: 70px;
 }
 
 img:hover {
@@ -245,10 +245,8 @@ img:hover {
   justify-content: center;
   align-items: center;
   margin: 0 auto;
-  height: auto;
   min-height: 200px;
-  max-height: 250px;
-  margin-bottom: 30px;
+  margin-bottom: 100px;
 }
 
 @media (max-width: 767px) {
@@ -283,23 +281,27 @@ img:hover {
 
 }
 
-.list-wrapper0{
-  margin-bottom: 10px;
+.list-wrapper0 {
+  margin-top: 40px;
 }
 
 @media (max-width: 767px) {
     .list-wrapper0{
-      margin-bottom: 50px;
+      margin-bottom: 70px;
   }
 }
 
+.design2 {
+  position: relative;
+}
+
 .list-wrapper0russian{
-  margin-bottom: 25px;
+  margin-top: 40px;
 }
 
 @media (max-width: 767px) {
     .list-wrapper0russian{
-      margin-top: 40px;
+      margin-top: 43px;
       margin-bottom: 100px;
   }
 }
@@ -335,8 +337,10 @@ img:hover {
 }
 
 .list-description{
+  justify-content: center;
+  align-items: center;
   width: 562px;
-  height: 562px;
+  height: auto;
   padding-top: 0;
   pointer-events: none;
 }
@@ -360,7 +364,7 @@ img:hover {
   line-height: 10px;
   font-size: 9px;
   text-transform: uppercase;
-  padding: 200px 0px 0px 50px;
+  padding: 0px 0px 0px 50px;
   margin: 0;
 }
 
@@ -432,10 +436,9 @@ img:hover {
 
 .repo-button{
   position: left;
-  display: inline-block;
   padding-top: 12px;
   padding-left: 50px;
-  position: absolute;
+  margin-bottom: 10px;
   z-index: 9999;
   pointer-events: all;
 }

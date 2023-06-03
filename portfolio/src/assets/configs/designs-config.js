@@ -21,7 +21,7 @@ const designContent = [{
       link: 'https://servos.bandcamp.com/',
       imageSrc: '/images/servos.png',
       title: 'SERVOS',
-      description: 'A Rhythmic Techno producer from Kyiv Ukraine. Not much is known about this artist. They created an EP and then went off the grid. I liked designing their artwork because the music set the tone. Definetaly check out servos if you want to hear some unique techno.',
+      description: 'A Rhythmic Techno producer from the internet. Not much is known about this artist. They created an EP and then went off the grid. I liked designing their artwork because the music set the tone. Definetaly check out servos if you want to hear some unique techno.',
       tag: 'PRODUCER, RHYTHMIC TECHNO, SHOWCASE'
     }
   ],
@@ -47,7 +47,7 @@ const designContent = [{
       link: 'https://servos.bandcamp.com/',
       imageSrc: '/images/servos.png',
       title: 'SERVOS',
-      description: 'Ритмичный техно-продюсер из Киева, Украина. Об этом художнике известно не так много. Они создали EP, а затем исчезли из сети. Мне понравилось создавать их художественные работы, потому что музыка задавала тон. Обязательно ознакомьтесь с сервоприводами, если хотите услышать о какой-нибудь уникальной технологии.',
+      description: 'Ритмичный техно-продюсер из Интернета. Об этом художнике известно не так уж много. Они создали мини-альбом, а затем исчезли из сети. Мне понравилось создавать их иллюстрации, потому что музыка задавала тон. Обязательно ознакомьтесь с сервисом, если вы хотите услышать о каких-то уникальных технологиях.',
       tag: 'PRODUCER, RHYTHMIC TECHNO, SHOWCASE'
     }
   ]

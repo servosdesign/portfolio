@@ -1,5 +1,6 @@
 const projectContent = [{
   englishContent: [
+    /*
     {
       order: 1,
       link: 'https://github.com/servosdesign/horror-ai',
@@ -8,14 +9,18 @@ const projectContent = [{
       description: "Horror.ai is a Vue.js AI-powered application that creates simulated horror movie themed experiences from the use of OpenAI's API, a backend with Express, and custom prompts for each specific horror theme. The user signs up with their own OpenAI API keys and manages their own tokenization.",
       tag: 'VUE.js, OPENAI, Express'
     },
+    */
+
     {
       order: 2,
       link: 'https://github.com/servosdesign/rucream',
       imageSrc: '/images/rucream.png',
       title: 'ruCream',
-      description: 'ruCream is a light mode, minimalistic, creamy color theme for vscode JavaScript applications and is heavily inspired by the Ayu Color Themes. The base template of ruCream is a modification of the Ayu Light Theme\'s color choices while maintaining its key concepts. Designed as a light and airy theme, inspired by the iconic Russian cream dessert color palette, consisting of reds, creams, whites, and the signature glass or white bowl, which gives a sleek, minimalistic, and even delicious feeling when writing.',
-      tag: 'THEMES, VSCODE, JAVASCRIPT'
+      description: 'ruCream is a light mode, minimalistic, creamy color theme for vscode applications and is heavily inspired by the Ayu Color Themes. The base template of ruCream is a modification of the Ayu Light Theme\'s color choices while maintaining its key concepts. Designed as a light and airy theme, inspired by the iconic Russian cream dessert color palette, consisting of reds, creams, whites, and the signature glass or white bowl, which gives a sleek, minimalistic, and even delicious feeling when writing.',
+      tag: 'THEMES, VSCODE, Ayu'
     },
+
+    /*
     {
       order: 3,
       link: 'https://github.com/servosdesign/servos-marketplace',
@@ -24,6 +29,8 @@ const projectContent = [{
       description: "Servos Marketplace is a Ethereum based NFT marketplace application (dApp) made with React, Solidity, Truffle, and web3.js which allows the user to view and / or purchase ERC721 NFTs from among the marketplace items. User log in with their ether wallet address and have access to purchase Solidty / Truffle generated ERC721 NFT s made on the Rinkeby's development network.",
       tag: 'SOLIDITY, TRUFFLE, WEB3.JS, REACT'
     },
+    */
+    /*
     {
       order: 4,
       link: 'https://github.com/servosdesign/minimalistic-questions.vue',
@@ -34,6 +41,8 @@ const projectContent = [{
       uniqueButton: true,
       uniqueLink: 'https://github.com/servosdesign/minimalistic-questions.js'
     },
+    */
+
     {
       order: 5,
       link: 'https://github.com/servosdesign/portfolio',
@@ -44,6 +53,7 @@ const projectContent = [{
     }
   ],
   russianContent: [
+    /*
     {
       order: 1,
       link: 'https://github.com/servosdesign/horror-ai',
@@ -52,6 +62,8 @@ const projectContent = [{
       description: 'Horror.ai является Vue.js Приложение на базе искусственного интеллекта, которое создает имитацию событий на тему фильмов ужасов с использованием API OpenAI, серверной части с Express и пользовательских подсказок для каждой конкретной темы ужасов. Пользователь регистрируется с помощью своих собственных ключей Openal API и управляет своей собственной токенизацией.',
       tag: 'VUE.js, OPENAI, Express'
     },
+    */
+
     {
       order: 2,
       link: 'https://github.com/servosdesign/rucream',
@@ -60,6 +72,8 @@ const projectContent = [{
       description: 'ruCream - это минималистичная тема кремового цвета в легком режиме для приложений vscode JavaScript, в значительной степени вдохновленная цветовыми темами Ayu. Базовый шаблон ruCream представляет собой модификацию выбора цвета темы Ayu Light при сохранении ее ключевых концепций. Оформленный в легкой и воздушной тематике, вдохновленный культовой цветовой палитрой десертов "Русский крем", состоящей из красных, сливочных, белых тонов и фирменной стеклянной или белой чаши, которая создает гладкое, минималистичное и даже восхитительное ощущение при написании.',
       tag: 'THEMES, VSCODE, JAVASCRIPT'
     },
+
+    /*
     {
       order: 3,
       link: 'https://github.com/servosdesign/servos-marketplace',
@@ -68,6 +82,8 @@ const projectContent = [{
       description: "Servos Marketplace - это приложение NFT marketplace на базе Ethereum (DApp), созданное с использованием React, Solidity, Truffle и web3.js который позволяет пользователю просматривать и / или приобретать NFT ERC721 из числа товаров marketplace. Пользователь входит в систему со своим другим адресом кошелька и получает доступ к покупке сгенерированных Solidity / Truffle NFT ERC721, сделанных в сети разработчиков Rinkeby's.",
       tag: 'SOLIDITY, TRUFFLE, WEB3.JS, REACT'
     },
+    */
+    /*
     {
       order: 4,
       link: 'https://github.com/servosdesign/minimalistic-questions.vue',
@@ -78,6 +94,8 @@ const projectContent = [{
       uniqueButton: true,
       uniqueLink: 'https://github.com/servosdesign/minimalistic-questions.js'
     },
+    */
+
     {
       order: 5,
       link: 'https://github.com/servosdesign/portfolio',

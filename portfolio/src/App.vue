@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="zoom-wrapper">
     <!--
     <div id="zoom-buttons">
       <button id="zoom-in">
@@ -114,6 +114,23 @@ export default {
 </script>
 
 <style>
+
+.zoom-wrapper {
+  zoom: 1.1; /* Adjust the zoom value as needed */
+  transform-origin: top left;
+  width: fit-content;
+  margin: auto;
+}
+
+@media (max-width: 767px) {
+  .zoom-wrapper {
+  zoom: 1; /* Adjust the zoom value as needed */
+  transform-origin: top;
+  width: 100%;
+  margin: auto;
+}
+}
+
 #zoom-buttons {
   position: fixed;
   top: 30px;

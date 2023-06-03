@@ -285,6 +285,10 @@ img:hover {
   margin-bottom: 45px;
 }
 
+.list-wrapper1russian{
+  margin-bottom: 25px;
+}
+
 .list-wrapper0 {
   margin-top: 40px;
 }

@@ -281,6 +281,10 @@ img:hover {
 
 }
 
+.list-wrapper1{
+  margin-bottom: 45px;
+}
+
 .list-wrapper0 {
   margin-top: 40px;
 }

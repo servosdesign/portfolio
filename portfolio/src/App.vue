@@ -116,7 +116,7 @@ export default {
 <style>
 
 .zoom-wrapper {
-  zoom: 1.1; /* Adjust the zoom value as needed */
+  zoom: 1.05; /* Adjust the zoom value as needed */
   transform-origin: top left;
   width: fit-content;
   margin: auto;

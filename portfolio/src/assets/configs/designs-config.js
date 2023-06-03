@@ -15,7 +15,8 @@ const designContent = [{
       title: 'METHUSELAH RECORDS',
       description: "Methuselah Records was a short endeavor from an anonymous producer based in San Fransisco. Releasing tracks under multiple alias', this artist founded the label to throw out tracks that didn't make the cut. He designed this label to not only post his own tracks, but also for a place his friends. Multiple releases are all from people in his close personal circle. I designed all the artwork for this label.",
       tag: 'RECORD LABEL, ELECTRONIC, SHOWCASE'
-    },
+    }
+    /*
     {
       order: 3,
       link: 'https://servos.bandcamp.com/',
@@ -24,6 +25,7 @@ const designContent = [{
       description: 'A Rhythmic Techno producer from the internet. Not much is known about this artist. They created an EP and then went off the grid. I liked designing their artwork because the music set the tone. Definetaly check out servos if you want to hear some unique techno.',
       tag: 'PRODUCER, RHYTHMIC TECHNO, SHOWCASE'
     }
+    */
   ],
   russianContent: [
     {
@@ -41,7 +43,8 @@ const designContent = [{
       title: 'METHUSELAH RECORDS',
       description: 'Methuselah Records была короткой попыткой анонимного продюсера, базирующегося в Сан-Франциско. Выпуская треки под несколькими псевдонимами", этот артист основал лейбл, чтобы выбрасывать треки, которые не попали в прокат. Он создал этот лейбл не только для размещения своих собственных треков, но и для размещения своих друзей. Многочисленные релизы - все от людей из его близкого личного круга. Я разработал все иллюстрации для этого лейбла.',
       tag: 'RECORD LABEL, ELECTRONIC, SHOWCASE'
-    },
+    }
+    /*
     {
       order: 3,
       link: 'https://servos.bandcamp.com/',
@@ -50,6 +53,7 @@ const designContent = [{
       description: 'Ритмичный техно-продюсер из Интернета. Об этом художнике известно не так уж много. Они создали мини-альбом, а затем исчезли из сети. Мне понравилось создавать их иллюстрации, потому что музыка задавала тон. Обязательно ознакомьтесь с сервисом, если вы хотите услышать о каких-то уникальных технологиях.',
       tag: 'PRODUCER, RHYTHMIC TECHNO, SHOWCASE'
     }
+    */
   ]
 }]
 

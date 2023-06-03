@@ -54,15 +54,6 @@
           </li>
           <li
             key="1"
-            :class="{ active: currentLink === 'designs' }"
-          >
-            <a
-              href="/designs"
-              @click="toggleMenu"
-            >Designs</a>
-          </li>
-          <li
-            key="1"
             :class="{ active: currentLink === 'lookbook' }"
           >
             <a
@@ -88,16 +79,6 @@
               href="/"
               @click="toggleMenu"
             >Проекты</a>
-          </li>
-          <li
-            key="1"
-            :class="{ active: currentLink === 'designs' }"
-          >
-            <a
-              class="russian-font"
-              href="/designs"
-              @click="toggleMenu"
-            >дизайны</a>
           </li>
           <li
             key="1"

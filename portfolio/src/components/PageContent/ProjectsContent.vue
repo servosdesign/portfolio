@@ -350,7 +350,6 @@ img:hover {
   width: 562px;
   height: auto;
   padding-top: 0;
-  pointer-events: none;
 }
 
 @media (max-width: 767px) {

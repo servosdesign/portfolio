@@ -1,6 +1,5 @@
 const projectContent = [{
   englishContent: [
-    /*
     {
       order: 1,
       link: 'https://github.com/servosdesign/horror-ai',
@@ -9,7 +8,6 @@ const projectContent = [{
       description: "Horror.ai is a Vue.js AI-powered application that creates simulated horror movie themed experiences from the use of OpenAI's API, a backend with Express, and custom prompts for each specific horror theme. The user signs up with their own OpenAI API keys and manages their own tokenization.",
       tag: 'VUE.js, OPENAI, Express'
     },
-    */
 
     {
       order: 2,
@@ -20,7 +18,6 @@ const projectContent = [{
       tag: 'THEMES, VSCODE, Ayu'
     },
 
-    /*
     {
       order: 3,
       link: 'https://github.com/servosdesign/servos-marketplace',
@@ -29,8 +26,7 @@ const projectContent = [{
       description: "Servos Marketplace is a Ethereum based NFT marketplace application (dApp) made with React, Solidity, Truffle, and web3.js which allows the user to view and / or purchase ERC721 NFTs from among the marketplace items. User log in with their ether wallet address and have access to purchase Solidty / Truffle generated ERC721 NFT s made on the Rinkeby's development network.",
       tag: 'SOLIDITY, TRUFFLE, WEB3.JS, REACT'
     },
-    */
-    /*
+
     {
       order: 4,
       link: 'https://github.com/servosdesign/minimalistic-questions.vue',
@@ -41,10 +37,27 @@ const projectContent = [{
       uniqueButton: true,
       uniqueLink: 'https://github.com/servosdesign/minimalistic-questions.js'
     },
-    */
 
     {
       order: 5,
+      link: 'https://github.com/servosdesign/moses',
+      imageSrc: '/images/moses.png',
+      title: 'Moses',
+      description: 'Moses is a Unity2D RPG game with top down, pixelized, minimalistic, and choices matter features. The player is guided through the game’s various scenes and is left with their own options in the varying situations',
+      tag: 'UNITY, C#, GAME'
+    },
+
+    {
+      order: 6,
+      link: 'https://github.com/servosdesign/servos-coral',
+      imageSrc: '/images/servos-coral.png',
+      title: 'Servos Coral',
+      description: 'Servos Coral is a JavaScript imgur clone application with a stack composed of NodeJS, ExpressJS, SQL, and Handlebars, which allows users to create accounts, posts images, comment on images, and search for images',
+      tag: 'JAVASCRIPT, NODE.js, EXPRESS.js, SQL'
+    },
+
+    {
+      order: 7,
       link: 'https://github.com/servosdesign/portfolio',
       imageSrc: '/images/portfolio.png',
       title: 'Portfolio',
@@ -53,7 +66,6 @@ const projectContent = [{
     }
   ],
   russianContent: [
-    /*
     {
       order: 1,
       link: 'https://github.com/servosdesign/horror-ai',
@@ -62,7 +74,6 @@ const projectContent = [{
       description: 'Horror.ai является Vue.js Приложение на базе искусственного интеллекта, которое создает имитацию событий на тему фильмов ужасов с использованием API OpenAI, серверной части с Express и пользовательских подсказок для каждой конкретной темы ужасов. Пользователь регистрируется с помощью своих собственных ключей Openal API и управляет своей собственной токенизацией.',
       tag: 'VUE.js, OPENAI, Express'
     },
-    */
 
     {
       order: 2,
@@ -73,7 +84,6 @@ const projectContent = [{
       tag: 'THEMES, VSCODE, JAVASCRIPT'
     },
 
-    /*
     {
       order: 3,
       link: 'https://github.com/servosdesign/servos-marketplace',
@@ -82,8 +92,6 @@ const projectContent = [{
       description: "Servos Marketplace - это приложение NFT marketplace на базе Ethereum (DApp), созданное с использованием React, Solidity, Truffle и web3.js который позволяет пользователю просматривать и / или приобретать NFT ERC721 из числа товаров marketplace. Пользователь входит в систему со своим другим адресом кошелька и получает доступ к покупке сгенерированных Solidity / Truffle NFT ERC721, сделанных в сети разработчиков Rinkeby's.",
       tag: 'SOLIDITY, TRUFFLE, WEB3.JS, REACT'
     },
-    */
-    /*
     {
       order: 4,
       link: 'https://github.com/servosdesign/minimalistic-questions.vue',
@@ -94,10 +102,27 @@ const projectContent = [{
       uniqueButton: true,
       uniqueLink: 'https://github.com/servosdesign/minimalistic-questions.js'
     },
-    */
 
     {
       order: 5,
+      link: 'https://github.com/servosdesign/moses',
+      imageSrc: '/images/moses.png',
+      title: 'Moses',
+      description: 'Moses - это ролевая игра в Unity2D с видом сверху вниз, пикселизированная, минималистичная, с возможностью выбора. Игрока проводят через различные сцены игры и оставляют за ним право выбора в различных ситуациях.',
+      tag: 'UNITY, C#, GAME'
+    },
+
+    {
+      order: 6,
+      link: 'https://github.com/servosdesign/servos-coral',
+      imageSrc: '/images/servos-coral.png',
+      title: 'Servos Coral',
+      description: 'Servos Coral - это приложение-клон imgur на JavaScript со стеком из NodeJS, ExpressJS, SQL и Handlebars, которое позволяет пользователям создавать аккаунты, размещать изображения, комментировать их и искать изображения.',
+      tag: 'JAVASCRIPT, NODE.js, EXPRESS.js, SQL'
+    },
+
+    {
+      order: 7,
       link: 'https://github.com/servosdesign/portfolio',
       imageSrc: '/images/portfolio.png',
       title: 'Portfolio',

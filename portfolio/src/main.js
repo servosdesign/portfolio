@@ -3,7 +3,6 @@ import { createRouter, createWebHistory } from 'vue-router'
 import App from './App.vue'
 
 import ProjectsContent from './components/PageContent/ProjectsContent.vue'
-import LookbookContent from './components/PageContent/LookbookContent.vue'
 
 const testingRoute = '/test/dev/project1'
 
@@ -11,7 +10,6 @@ const router = createRouter({
   history: createWebHistory(),
   routes: [
     { path: '/', component: ProjectsContent },
-    { path: '/lookbook', component: LookbookContent },
     { path: '/:pathMatch(.*)*', redirect: '/' }
   ]
 })

@@ -52,15 +52,6 @@
               @click="toggleMenu"
             >Projects</a>
           </li>
-          <li
-            key="1"
-            :class="{ active: currentLink === 'lookbook' }"
-          >
-            <a
-              href="/lookbook"
-              @click="toggleMenu"
-            >Lookbook</a>
-          </li>
         </transition-group>
 
         <transition-group
@@ -79,16 +70,6 @@
               href="/"
               @click="toggleMenu"
             >Проекты</a>
-          </li>
-          <li
-            key="1"
-            :class="{ active: currentLink === 'lookbook' }"
-          >
-            <a
-              href="/lookbook"
-              class="russian-font"
-              @click="toggleMenu"
-            >лукбук</a>
           </li>
         </transition-group>
       </div>

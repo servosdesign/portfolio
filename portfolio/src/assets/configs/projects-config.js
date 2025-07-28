@@ -23,7 +23,7 @@ const projectContent = [{
       link: 'https://github.com/servosdesign/servos-marketplace',
       imageSrc: '/images/nft-marketplace.png',
       title: 'Servos Marketplace',
-      description: "Servos Marketplace is a Ethereum based NFT marketplace application (dApp) made with React, Solidity, Truffle, and web3.js which allows the user to view and / or purchase ERC721 NFTs from among the marketplace items. User log in with their ether wallet address and have access to purchase Solidty / Truffle generated ERC721 NFT s made on the Rinkeby's development network.",
+      description: "Servos Marketplace is a Ethereum based NFT marketplace application (dApp) made with React, Solidity, Truffle, and web3.js which allows the user to view and / or purchase ERC721 NFTs from among the marketplace items. User log in with their ether wallet address and have access to purchase Solidty / Truffle generated ERC721 NFTs made on the Rinkeby's development network.",
       tag: 'SOLIDITY, TRUFFLE, WEB3.JS, REACT'
     },
 
